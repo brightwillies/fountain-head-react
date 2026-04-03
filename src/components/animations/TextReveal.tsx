@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
 interface TextRevealProps {
@@ -27,7 +27,8 @@ export default function TextReveal({
     ? children.split("\n")
     : children.split(" ");
 
-  const containerVariants = {
+  // Fixed Container Variants
+  const containerVariants: Variants = {
     hidden: {},
     visible: {
       transition: {
@@ -37,7 +38,8 @@ export default function TextReveal({
     },
   };
 
-  const elementVariants = {
+  // Fixed Element Variants - Transition moved to component level
+  const elementVariants: Variants = {
     hidden: {
       opacity: 0,
       y: 30,
@@ -47,10 +49,6 @@ export default function TextReveal({
       opacity: 1,
       y: 0,
       rotateX: 0,
-      transition: {
-        duration,
-        ease: [0.25, 0.1, 0.25, 1],
-      },
     },
   };
 
@@ -69,6 +67,10 @@ export default function TextReveal({
           variants={elementVariants}
           className="inline-block origin-bottom"
           style={{ transformStyle: "preserve-3d" }}
+          transition={{
+            duration,
+            ease: [0.25, 0.1, 0.25, 1],
+          }}
         >
           {element}
           {type === "words" && <span>&nbsp;</span>}

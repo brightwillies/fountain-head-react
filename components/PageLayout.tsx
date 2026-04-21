@@ -120,10 +120,11 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
             {[
-              { title: 'Schools', links: ['Primary School', 'Lower School', 'New Avenues', 'Middle School', 'Upper School'] },
-              { title: 'Admission', links: ['Why Walker', 'Inquire', 'Plan a Visit', 'Tuition & Aid', 'FAQs'] },
-              { title: 'Community', links: ['Summer Camp', 'Athletics', 'Arts', 'Campus Dining', 'Community Service'] },
-              { title: 'Support', links: ['The Walker Fund', 'Matching Gifts', 'Georgia GOAL', 'Make a Gift'] },
+              { title: 'Home', links: ['Home'] },
+              { title: 'Schools', links: ['Primary School', 'Lower School',] },
+              { title: 'Admission', links: ['Inquire', 'Plan a Visit'] },
+              { title: 'Student Zone', links: ['Sports',  ] },
+      
             ].map((col) => (
               <div key={col.title}>
                 <h3 className="font-display text-gold text-md mb-3">{col.title}</h3>

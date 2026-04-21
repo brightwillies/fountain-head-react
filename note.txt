@@ -1,0 +1,100 @@
+'We seek to exemplify the principles of the bible in an atmosphere of discipline.',
+ 'Our goal is to offer an outstanding academic curriculum as well as develop the child wholly: Spiritually, Mentally, Emotionally,',
+'Physically and Socially'
+
+
+'Fountainhead Christian School is committed to raising a generation of pupils with Godly moral standards,'
+'coupled with academic excellence so they can grow',
+'up to be reliable, dependable and successful leaders',
+'who will transform their environment, nation and the',
+'world at large.'
+
+
+/* Dark blue Code : #10147c */
+/* Light Blue color code : #10bdce */
+
+
+
+
+ <footer style={{ background: '#dbeffb' }} className="px-8 md:px-20 py-12">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+            {[
+              { title: 'Schools', links: ['Primary School', 'Lower School', 'New Avenues', 'Middle School', 'Upper School'] },
+              { title: 'Admission', links: ['Why Walker', 'Inquire', 'Plan a Visit', 'Tuition & Aid', 'FAQs'] },
+              { title: 'Community', links: ['Summer Camp', 'Athletics', 'Arts', 'Campus Dining', 'Community Service'] },
+              { title: 'Support', links: ['The Walker Fund', 'Matching Gifts', 'Georgia GOAL', 'Make a Gift'] },
+            ].map((col) => (
+              <div key={col.title}>
+                <h4 className="font-display text-navy text-sm mb-3">{col.title}</h4>
+                <ul className="space-y-2">
+                  {col.links.map((l) => (
+                    <li key={l}>
+                      <Link href="#" className="text-black hover:text-navy font-body text-xs transition-colors">
+                        {l}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="border-t border-black pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <div className="font-display text-white text-base mb-1">The Fountainhead Christian School</div>
+              
+            </div>
+            <div className="text-black font-body text-[10px]">
+              © {new Date().getFullYear()} The Fountainhead Christian School. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+  {/* ── Page Footer ───────────────────────────── */}
+      <footer style={{ background: '#0a0e5c' }} className="px-8 md:px-20 py-12">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+            {[
+              { title: 'Schools', links: ['Primary School', 'Lower School', 'New Avenues', 'Middle School', 'Upper School'] },
+              { title: 'Admission', links: ['Why Walker', 'Inquire', 'Plan a Visit', 'Tuition & Aid', 'FAQs'] },
+              { title: 'Community', links: ['Summer Camp', 'Athletics', 'Arts', 'Campus Dining', 'Community Service'] },
+              { title: 'Support', links: ['The Walker Fund', 'Matching Gifts', 'Georgia GOAL', 'Make a Gift'] },
+            ].map((col) => (
+              <div key={col.title}>
+                <h4 className="font-display text-gold text-sm mb-3">{col.title}</h4>
+                <ul className="space-y-2">
+                  {col.links.map((l) => (
+                    <li key={l}>
+                      <Link href="#" className="text-white/40 hover:text-white font-body text-xs transition-colors">
+                        {l}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <div className="font-display text-white text-base mb-1">The Walker School</div>
+              <div className="text-white/30 font-body text-xs">700 Cobb Pkwy N · Marietta, Georgia 30062</div>
+            </div>
+            <div className="text-white/20 font-body text-[10px]">
+              © {new Date().getFullYear()} The Walker School. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      ///
+
+
+              className="fixed left-5 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-gold transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
+
+
+              //
+
+                      className="fixed right-14 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-gold transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"

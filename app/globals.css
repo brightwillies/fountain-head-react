@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #10147c;
+  --navy-dark: #0a0e5c;
+  --navy-light: #1a1fa0;
+  --secondary-navy: #10bdce;
+  --navy-muted: #1e2399;
+  --secondary-navy-light: #4eb8c2;
+
+  --gold: #c9a84c;
+  --gold-light: #e8c96e;
+  --white: #ffffff;
+  --off-white: #f8f7f4;
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  overflow: hidden;
+}
+
+body {
+  background: var(--navy-dark);
+  color: var(--white);
+
+  overflow: hidden;
+}
+
+/* ── Mobile: restore vertical scroll ── */
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow: auto;
+  }
+}
+
+/* ── Inner pages: vertical scroll ── */
+.page-root {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: #1a1a2e;
+}
+.page-root h1,
+.page-root h2,
+.page-root h3,
+.page-root h4 {
+  font-family: "Cormorant Garamond", serif;
+}
+.page-root p,
+.page-root a,
+.page-root span,
+.page-root li {
+  font-family: "DM Sans", sans-serif;
+}
+/* navy text helpers for light bg pages */
+.text-navy {
+  color: #10147c;
+}
+.border-navy\/10 {
+  border-color: rgba(16, 20, 124, 0.1);
+}
+.border-navy\/30 {
+  border-color: rgba(16, 20, 124, 0.3);
+}
+
+/* ── Horizontal slide container ── */
+.slides-track {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  transition: transform 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  will-change: transform;
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .slides-track {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    transition: none;
+  }
+  .slide {
+    min-width: 100vw;
+    height: 100svh;
+  }
+}
+
+/* ── Video hero ── */
+.video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 14, 92, 0.82) 0%,
+    rgba(16, 20, 124, 0.55) 50%,
+    rgba(10, 14, 92, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+/* ── Slide-in animation classes ── */
+.anim-slide {
+  opacity: 0;
+  transform: translateX(60px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.anim-slide.from-left {
+  transform: translateX(-60px);
+}
+.anim-slide.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Nav ── */
+.nav-glass {
+  background: rgba(10, 14, 92, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.18);
+}
+
+/* ── Mega menu ── */
+.mega-menu {
+  background: #dbeffb;
+  backdrop-filter: blur(24px);
+}
+
+/* ── Dot nav ── */
+.dot-nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dot-nav-dot.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ── Gold line accent ── */
+.gold-rule {
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+/* ── Card hover ── */
+.division-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.division-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.division-card:hover::after {
+  transform: scaleX(1);
+}
+.division-card:hover .card-img {
+  transform: scale(1.06);
+}
+.card-img {
+  transition: transform 0.6s ease;
+}
+
+/* ── Scroll hint arrow ── */
+@keyframes bounce-x {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+.scroll-hint {
+  animation: bounce-x 1.6s ease-in-out infinite;
+}
+
+/* ── Ticker/marquee ── */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee-inner {
+  animation: marquee 22s linear infinite;
+}
+
+/* ── Stagger delays for children ── */
+.stagger > *:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.stagger > *:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.stagger > *:nth-child(3) {
+  transition-delay: 0.25s;
+}
+.stagger > *:nth-child(4) {
+  transition-delay: 0.35s;
+}
+.stagger > *:nth-child(5) {
+  transition-delay: 0.45s;
+}

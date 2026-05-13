@@ -92,35 +92,35 @@ export default function Navbar({
           <div className="hidden lg:flex items-center gap-6">
             <Link
               href="/"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase transition-colors duration-200"
             >
               Home
             </Link>
 
             <Link
               href="/admission"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase   transition-colors duration-200"
             >
               Admissions{" "}
             </Link>
 
              <Link
               href="/creche-curriculum"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase transition-colors duration-200"
             >
               Curriculim{" "}
             </Link>
 
                <Link
               href="/school-clubs"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase transition-colors duration-200"
             >
               Student Zone{" "}
             </Link>
 
             <Link
               href="https://portal.fcs.edu.gh/parent/login.php"
-              className="px-4 py-2 border border-navy text-navy text-xs font-body font-bold  tracking-widest uppercase hover:bg-gold hover:text-navy transition-all duration-300"
+              className="px-4 py-2 border border-navy text-navy text-xs font-body tracking-widest uppercase hover:bg-gold hover:text-navy transition-all duration-300"
             >
               
               Fountainhead WEB

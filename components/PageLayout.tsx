@@ -102,7 +102,8 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
       </div>
 
       {/* ── Page Body ─────────────────────────────── */}
-      <div style={{ background: '#f8f7f4', minHeight: '60vh' }}>
+      {/* <div style={{ background: '#f8f7f4', minHeight: '60vh' }}> */}
+      <div style={{ background: '#0a0e5c', minHeight: '60vh' }}>
         <div className="max-w-screen-xl mx-auto px-8 md:px-20 py-16">
           {sidebar ? (
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-12">

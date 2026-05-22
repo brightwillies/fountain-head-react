@@ -94,7 +94,7 @@ export default function AboutSlide({ isActive }: { isActive: boolean }) {
               className={`transition-all duration-700 ${loaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
             >
               <span className="gold-rule" />
-              <span className="text-gold text-[11px] tracking-[0.35em] uppercase font-body block mb-4">
+              <span className="text-white text-[11px] tracking-[0.35em] uppercase font-body block mb-4">
                 Our Rules
               </span>
               <h2
@@ -102,7 +102,7 @@ export default function AboutSlide({ isActive }: { isActive: boolean }) {
                 style={{ fontSize: "clamp(2.5rem, 5vw, 5rem)" }}
               >
                 Our Rules that keep <br />{" "}
-                <em className="text-gold font-light"> us going</em>
+                <em className="text-white font-light"> us going</em>
               </h2>
               <p className="text-white/85 font-body font-light text-base leading-relaxed mb-2 ">
                 Fountainhead Christian School believes that good behavior and
@@ -137,14 +137,14 @@ export default function AboutSlide({ isActive }: { isActive: boolean }) {
             {values.map((v, i) => (
               <div
                 key={v.title}
-                className={`p-6 border border-white/10 hover:border-gold/40 transition-all duration-500 group ${
+                className={`p-6 border border-white/10 hover:border-white/40 transition-all duration-500 group ${
                   loaded
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
                 }`}
                 style={{ transitionDelay: `${200 + i * 100}ms` }}
               >
-                <div className="text-gold text-2xl mb-3 group-hover:scale-110 transition-transform duration-300 inline-block">
+                <div className="text-white text-2xl mb-3 group-hover:scale-110 transition-transform duration-300 inline-block">
                   {v.icon}
                 </div>
                 <h3 className="font-display text-white text-lg mb-2">

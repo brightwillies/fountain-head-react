@@ -51,8 +51,8 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
           {/* Left: Process */}
           <div>
             <div className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <span className="gold-rule" />
-              <span className="text-gold text-[11px] tracking-[0.35em] uppercase font-body block mb-3">
+              <span className="white-rule" />
+              <span className="text-white text-[11px] tracking-[0.35em] uppercase font-body block mb-3">
                 Admission
               </span>
               <h2
@@ -62,7 +62,7 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
                 Begin Your
               </h2>
               <h2
-                className="font-display italic text-gold leading-tight mb-8"
+                className="font-display italic text-white leading-tight mb-8"
                 style={{ fontSize: 'clamp(2.2rem, 4vw, 4.5rem)' }}
               >
                 Fountain Journey
@@ -98,13 +98,13 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
             >
               <Link
                 href="/"
-                className="px-6 py-3 bg-gold text-navy font-body font-semibold text-xs tracking-widest uppercase hover:bg-gold-light transition-colors"
+                className="px-6 py-3 bg-white text-navy font-body font-semibold text-xs tracking-widest uppercase hover:bg-white-light transition-colors"
               >
                 Inquire Today
               </Link>
               <Link
                 href="/"
-                className="px-6 py-3 border border-white/30 text-white font-body text-xs tracking-widest uppercase hover:border-gold hover:text-gold transition-all"
+                className="px-6 py-3 border border-white/30 text-white font-body text-xs tracking-widest uppercase hover:border-white hover:text-white transition-all"
               >
                 Plan a Visit
               </Link>
@@ -124,21 +124,21 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="p-6 border border-white/10 hover:border-gold/30 transition-colors"
+                  className="p-6 border border-white/10 hover:border-white/30 transition-colors"
                   style={{ background: 'rgba(255,255,255,0.04)' }}
                 >
-                  <div className="font-display text-3xl md:text-4xl text-gold mb-2">{stat.num}</div>
+                  <div className="font-display text-3xl md:text-4xl text-white mb-2">{stat.num}</div>
                   <div className="text-white/50 font-body text-[10px] tracking-widest uppercase">{stat.label}</div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-6 p-6 border border-gold/20" style={{ background: 'rgba(201,168,76,0.06)' }}>
+            <div className="mt-6 p-6 border border-white/20" style={{ background: 'rgba(201,168,76,0.06)' }}>
               <p className="font-display italic text-white/70 text-lg leading-relaxed">
                 "Fountainhed gave our daughter more than an education — it gave her a community
                 where she truly belongs."
               </p>
-              <p className="text-gold text-xs tracking-widest uppercase font-body mt-3">
+              <p className="text-white text-xs tracking-widest uppercase font-body mt-3">
                 — Fountain Parent, Class of 2025
               </p>
             </div>

@@ -81,7 +81,7 @@ export default function DivisionsSlide({ isActive }: { isActive: boolean }) {
           <span className="gold-rule" />
           <div className="flex items-end justify-between flex-wrap gap-4">
             <div>
-              <span className="text-gold text-[11px] tracking-[0.35em] uppercase font-body block mb-2">
+              <span className="text-white text-[11px] tracking-[0.35em] uppercase font-body block mb-2">
                 Our Believes
               </span>
               <h2
@@ -89,7 +89,7 @@ export default function DivisionsSlide({ isActive }: { isActive: boolean }) {
                 style={{ fontSize: 'clamp(2rem, 4vw, 4rem)' }}
               >
                 Our Values{' '}
-                <span className="italic text-gold">That binds us</span>
+                <span className="italic text-white">That binds us</span>
               </h2>
             </div>
             <Link

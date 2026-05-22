@@ -6,7 +6,7 @@ const sidebar = (
     <div className="mb-6">
       <h4
         className="font-display text-base mb-3 pb-2"
-        style={{ color: '#c9a84c', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
+        style={{ color: '#fff', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
       >
         Admission
       </h4>
@@ -32,7 +32,7 @@ const sidebar = (
     <div className="mb-6">
       <h4
         className="font-display text-base mb-3 pb-2"
-        style={{ color: '#c9a84c', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
+        style={{ color: '#fff', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
       >
         Curriculum
       </h4>
@@ -61,7 +61,7 @@ const sidebar = (
       className="p-6 mb-6"
       style={{ background: '#10147c', border: '1px solid rgba(201,168,76,0.25)' }}
     >
-      <h4 className="font-display text-base mb-2" style={{ color: '#c9a84c' }}>
+      <h4 className="font-display text-base mb-2" style={{ color: '#fff' }}>
         Apply for 2025–26
       </h4>
       <p className="font-body text-xs mb-4 leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
@@ -70,7 +70,7 @@ const sidebar = (
       <a
         href="/inquire"
         className="block text-center py-3 text-xs tracking-widest uppercase font-body font-semibold"
-        style={{ background: '#c9a84c', color: '#10147c', textDecoration: 'none' }}
+        style={{ background: '#fff', color: '#10147c', textDecoration: 'none' }}
       >
         Start Application
       </a>
@@ -86,7 +86,7 @@ const sidebar = (
       </h4>
       <div className="font-body text-xs space-y-2">
         <p style={{ color: 'rgba(255,255,255,0.60)' }}>+233 (0) 303 963 578</p>
-        <p style={{ color: '#c9a84c' }}>admission@fcs.edu.gh</p>
+        <p style={{ color: '#fff' }}>admission@fcs.edu.gh</p>
         <p style={{ color: 'rgba(255,255,255,0.60)' }}>Mon–Fri, 8:00 AM – 4:30 PM</p>
       </div>
     </div>
@@ -110,8 +110,8 @@ export default function AdmissionPage() {
 
         {/* Section header */}
         <div className="mb-8">
-          <span className="block w-10 h-0.5 mb-4" style={{ background: '#c9a84c' }} />
-          <span style={{ color: '#c9a84c', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
+          <span className="block w-10 h-0.5 mb-4" style={{ background: '#fff' }} />
+          <span style={{ color: '#fff', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
             Fountainhead Christian School
           </span>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: 'white', lineHeight: 1.2, fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', marginBottom: '1.5rem' }}>
@@ -146,7 +146,7 @@ export default function AdmissionPage() {
           </div>
           <a
             href="/inquire"
-            style={{ flexShrink: 0, padding: '1rem 2rem', background: '#c9a84c', color: '#10147c', fontFamily: 'var(--font-body)', fontWeight: 600, fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}
+            style={{ flexShrink: 0, padding: '1rem 2rem', background: '#fff', color: '#10147c', fontFamily: 'var(--font-body)', fontWeight: 600, fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}
           >
             Inquire Now
           </a>

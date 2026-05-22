@@ -7,12 +7,12 @@ import WelcomeMessage from "@/components/slides/WelcomeMessage";
 import AboutSlide from "@/components/slides/AboutSlide";
 import DivisionsSlide from "@/components/slides/DivisionsSlide";
 import AdmissionSlide from "@/components/slides/AdmissionSlide";
-import AthleticsArtsSlide from "@/components/slides/AthleticsArtsSlide";
+import AboutUsComponent from "@/components/slides/AboutUsComponent";
 
 
 const SLIDES = [
   { label: "Home", Component: HeroSlide },
-  { label: "About us", Component: AthleticsArtsSlide },
+  { label: "About us", Component: AboutUsComponent },
   { label: "Welcome Message", Component: WelcomeMessage },
   { label: "Our Values", Component: DivisionsSlide },
   { label: "Our Rules", Component: AboutSlide },

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
-export default function AthleticsArtsSlide({ isActive }: { isActive: boolean }) {
+export default function AboutUsComponent({ isActive }: { isActive: boolean }) {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export default function AthleticsArtsSlide({ isActive }: { isActive: boolean }) 
 
               <Link
                 href={active.href}
-                className="inline-flex items-center gap-3 px-8 py-4 bg-gold text-black font-body font-semibold text-xs tracking-widest uppercase hover:bg-gold-light transition-colors"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-body font-semibold text-xs tracking-widest uppercase hover:bg-gold-light transition-colors"
               >
                 {active.cta}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

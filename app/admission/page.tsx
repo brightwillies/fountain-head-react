@@ -9,7 +9,7 @@ const sidebar = (
     <div className="mb-6">
       <h4
         className="font-display text-base mb-3 pb-2"
-        style={{ color: '#c9a84c', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
+        style={{ color: '#f2f1ef', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
       >
         Admission
       </h4>
@@ -36,7 +36,7 @@ const sidebar = (
     <div className="mb-6">
       <h4
         className="font-display text-base mb-3 pb-2"
-        style={{ color: '#c9a84c', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
+        style={{ color: '#ffffff', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
       >
         Curriculum
       </h4>
@@ -65,7 +65,7 @@ const sidebar = (
       className="p-6 mb-6"
       style={{ background: '#10147c', border: '1px solid rgba(201,168,76,0.25)' }}
     >
-      <h4 className="font-display text-base mb-2" style={{ color: '#c9a84c' }}>
+      <h4 className="font-display text-base mb-2" style={{ color: '#f4f2ee' }}>
         Apply for 2025–26
       </h4>
       <p className="font-body text-xs mb-4 leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
@@ -74,7 +74,7 @@ const sidebar = (
       <a
         href="/inquire"
         className="block text-center py-3 text-xs tracking-widest uppercase font-body font-semibold"
-        style={{ background: '#c9a84c', color: '#10147c', textDecoration: 'none' }}
+        style={{ background: '#fcfbf7', color: '#10147c', textDecoration: 'none' }}
       >
         Start Application
       </a>
@@ -90,7 +90,7 @@ const sidebar = (
       </h4>
       <div className="font-body text-xs space-y-2">
         <p style={{ color: 'rgba(255,255,255,0.60)' }}>+233 (0) 303 963 578</p>
-        <p style={{ color: '#c9a84c' }}>admission@fcs.edu.gh</p>
+        <p style={{ color: '#f5f3ee' }}>admission@fcs.edu.gh</p>
         <p style={{ color: 'rgba(255,255,255,0.60)' }}>Mon–Fri, 8:00 AM – 4:30 PM</p>
       </div>
     </div>
@@ -113,12 +113,12 @@ export default function AdmissionPage() {
 
         {/* Section header: Why FCS */}
         <div className="mb-8">
-          <span className="block w-10 h-0.5 mb-4" style={{ background: '#c9a84c' }} />
-          <span style={{ color: '#c9a84c', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
+          <span className="block w-10 h-0.5 mb-4" style={{ background: '#fff' }} />
+          <span style={{ color: '#faf9f6', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
             Why Fountainhead Christian School
           </span>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: 'white', lineHeight: 1.2, fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', marginBottom: '1rem' }}>
-            The Right Place to<br /><em style={{ color: '#c9a84c' }}>Grow and Thrive</em>
+            The Right Place to<br /><em style={{ color: '#f6f4f0' }}>Grow and Thrive</em>
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.60)', fontFamily: 'var(--font-body)', fontWeight: 300, fontSize: '0.95rem', lineHeight: 1.7, maxWidth: '42rem' }}>
             Families choose Fountainhead Christian School because we offer something rare: a school where every child is genuinely known and challenged to be their best self.
@@ -142,10 +142,10 @@ export default function AdmissionPage() {
 
         {/* Section header: Key reasons */}
         <div className="mb-6">
-          <span className="block w-10 h-0.5 mb-4" style={{ background: '#c9a84c' }} />
+          <span className="block w-10 h-0.5 mb-4" style={{ background: '#fff' }} />
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: 'white', lineHeight: 1.2, fontSize: 'clamp(1.8rem, 3.5vw, 3rem)' }}>
             Key Reasons Why You Should Study<br />
-            <em style={{ color: '#c9a84c' }}>at Fountainhead Christian School</em>
+            <em style={{ color: '#fcfbf7' }}>at Fountainhead Christian School</em>
           </h2>
         </div>
 
@@ -158,7 +158,7 @@ export default function AdmissionPage() {
             { icon: '□', text: 'FCS is blessed with an ultra-modern library which provides reading and research materials to meet the needs of students.' },
           ].map((item, i) => (
             <div key={i} style={{ padding: '1.5rem', border: '1px solid rgba(255,255,255,0.10)', background: 'rgba(255,255,255,0.04)' }}>
-              <div style={{ color: '#c9a84c', fontSize: '1.3rem', marginBottom: '0.75rem' }}>{item.icon}</div>
+              <div style={{ color: '#f7f6f3', fontSize: '1.3rem', marginBottom: '0.75rem' }}>{item.icon}</div>
               <p style={{ color: 'rgba(255,255,255,0.60)', fontFamily: 'var(--font-body)', fontWeight: 300, fontSize: '0.85rem', lineHeight: 1.75 }}>
                 {item.text}
               </p>
@@ -167,7 +167,7 @@ export default function AdmissionPage() {
         </div>
 
         {/* CTA Banner */}
-        <div style={{ padding: '2.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', background: 'rgba(201,168,76,0.10)', border: '1px solid rgba(201,168,76,0.25)' }}>
+        <div style={{ padding: '2.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', background: 'rgba(248, 248, 247, 0.1)', border: '1px solid rgba(248, 246, 242, 0.25)' }}>
           <div>
             <h3 style={{ fontFamily: 'var(--font-display)', color: 'white', fontSize: '1.5rem', marginBottom: '0.25rem' }}>
               Ready to Take the First Step?
@@ -178,7 +178,7 @@ export default function AdmissionPage() {
           </div>
           <a
             href="/inquire"
-            style={{ flexShrink: 0, padding: '1rem 2rem', background: '#c9a84c', color: '#10147c', fontFamily: 'var(--font-body)', fontWeight: 600, fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}
+            style={{ flexShrink: 0, padding: '1rem 2rem', background: '#fdfcf9', color: '#10147c', fontFamily: 'var(--font-body)', fontWeight: 600, fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}
           >
             Inquire Now
           </a>

@@ -114,7 +114,7 @@ export default function WelcomeMessage({ isActive }: { isActive: boolean }) {
               onClick={() => setTab(t.key)}
               className={`px-6 py-3 text-[10px] tracking-widest uppercase font-body transition-all duration-300 whitespace-nowrap ${
                 tab === t.key
-                  ? "bg-gold text-navy font-semibold"
+                  ? "bg-white text-navy font-semibold"
                   : "text-white/50 hover:text-white border-l border-white/10 first:border-l-0"
               }`}
             >
@@ -165,7 +165,7 @@ export default function WelcomeMessage({ isActive }: { isActive: boolean }) {
 
             <Link
               href={active.href}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gold text-navy font-body font-semibold text-xs tracking-widest uppercase hover:bg-gold-light transition-colors"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-navy font-body font-semibold text-xs tracking-widest uppercase hover:bg-gold-light transition-colors"
             >
               {active.cta}
               <svg

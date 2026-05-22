@@ -17,6 +17,7 @@ const sidebar = (
         {[
           { label: 'Admission Overview', href: '/admission' },
           { label: 'Admission Policy', href: '/admission-policy' },
+           { label: 'Payments ', href: '/payments' },
         ].map((l) => (
           <li key={l.label}>
             <a

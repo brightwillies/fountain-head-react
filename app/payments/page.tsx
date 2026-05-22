@@ -11,7 +11,7 @@ const sidebar = (
         {[
           { label: 'Admission Overview', href: '/admission' },
           { label: 'Admission Policy', href: '/admission-policy' },
-                  { label: 'Payments ', href: '/payments' },
+          { label: 'Payments ', href: '/payments' },
         ].map((l) => (
           <li key={l.label}>
             <a href={l.href} className="font-body text-sm py-1.5 block transition-colors duration-200 hover:text-white" style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
@@ -70,12 +70,12 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "Admission Policy",
+        title: "Payments",
 
         image:
           "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
       }}
-      breadcrumbs={[{ label: "Admission Policy" }]}
+      breadcrumbs={[{ label: "Payments" }]}
       sidebar={sidebar}
     >
       {/* ── Dark navy content panel ── */}
@@ -88,10 +88,11 @@ export default function AdmissionPage() {
             Fountainhead Christian School
           </span>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: 'white', lineHeight: 1.2, fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', marginBottom: '1rem' }}>
-            Discover our Admission Policy
+           Payment  (2025 – 2026 ACADEMIC YEAR)
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontWeight: 300, fontSize: '0.95rem', lineHeight: 1.8, maxWidth: '42rem' }}>
-            In order to process admissions, an entrance exam date will be scheduled for your child. Please note that writing the school's entrance examination does not guarantee your child a place at Fountainhead Christian School. Final placement will be based on the performance of your child in the entrance exam. Once your child has passed the entrance exam, we will need the following to complete your admission process.
+         
+         We require a non-refundable Cash Fee when submitting the required admission forms. Please make admission payments at our account’s office from Monday to Friday from 7:00am to 3:30pm. Contact us for more information.
           </p>
         </div>
 
@@ -99,7 +100,7 @@ export default function AdmissionPage() {
         <div className="mb-6">
           <span className="block w-10 h-0.5 mb-4" style={{ background: '#c9a84c' }} />
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: 'white', fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', marginBottom: '0.5rem' }}>
-            Simple Steps
+            Payment Policies
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.50)', fontFamily: 'var(--font-body)', fontSize: '0.875rem' }}>
             Our process is straightforward and designed to be welcoming from your very first inquiry.
@@ -109,13 +110,10 @@ export default function AdmissionPage() {
         {/* Steps list */}
         <div className="space-y-4 mb-12">
           {[
-            { num: '01', title: 'Complete application form.' },
-            { num: '02', title: 'Two recent passport photos of your child.' },
-            { num: '03', title: 'A photocopy of your child\'s birth and immunization certificate.' },
-            { num: '04', title: 'A photocopy of your child\'s report card / terminal report for at least one (1) academic year.' },
-            { num: '05', title: 'Cumulative records from your child\'s previous school.' },
-            { num: '06', title: 'Health information form (completed by you).' },
-            { num: '07', title: 'Physical examination form (it is mandatory to be completed by a COY Pediatrics doctor).' },
+            { num: '01', title: 'Admission is recognized when payment of registration and school fees is made in full' },
+            { num: '02', title: '100% (full payment) of the subsequent term fees must be made on or before the day of opening.' },
+            { num: '03', title: "If by the middle of the term a pupil/student has not reported for school as a result of non-payment of fees he/she will be considered withdrawn and as such he/she will be taken off the record."},
+            { num: '04', title: "We do not accept cash. All payments (school fees, feeding and Transportation fees) can be made into the following school’s account numbers at any Prudential Bank or Ecobank near you. "},
           ].map((step) => (
             <div
               key={step.num}
@@ -141,18 +139,15 @@ export default function AdmissionPage() {
         <div style={{ padding: '2.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem', background: 'rgba(201,168,76,0.10)', border: '1px solid rgba(201,168,76,0.25)' }}>
           <div>
             <h3 style={{ fontFamily: 'var(--font-display)', color: 'white', fontSize: '1.5rem', marginBottom: '0.25rem' }}>
-              Ready to Take the First Step?
+            Prudential Bank Details
             </h3>
-            <p style={{ color: 'rgba(255,255,255,0.50)', fontFamily: 'var(--font-body)', fontSize: '0.85rem' }}>
-              Our admissions team is here to guide your family every step of the way.
+            <p style={{ color: '#ffff', fontFamily: 'var(--font-body)', fontSize: '0.95rem' }}>
+              School Fees: 0122001220012 <br/> 
+              Feeding Fees: 0122001220023  <br/>
+               Transportation Fees: 0122001220067
             </p>
           </div>
-          <a
-            href="/inquire"
-            style={{ flexShrink: 0, padding: '1rem 2rem', background: '#c9a84c', color: '#10147c', fontFamily: 'var(--font-body)', fontWeight: 600, fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}
-          >
-            Inquire Now
-          </a>
+          
         </div>
 
       </div>{/* end dark panel */}

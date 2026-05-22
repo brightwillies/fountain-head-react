@@ -12,12 +12,15 @@
   --navy-muted: #1e2399;
   --secondary-navy-light: #4eb8c2;
 
-  --gold: #c9a84c;
-  --gold-light: #e8c96e;
+  --gold: #ffffff;
+  --gold-light: #f8f7f4;
+  /* --gold: #c9a84c;
+  --gold-light: #e8c96e; */
   --white: #ffffff;
   --off-white: #f8f7f4;
   --font-display: "Cormorant Garamond", serif;
-  --font-body: "DM Sans", sans-serif;
+  /* --font-body: "DM Sans", sans-serif; */
+  --font-body: "InterVariable", sans-serif;
 }
 
 * {
@@ -63,7 +66,7 @@ body {
 .page-root a,
 .page-root span,
 .page-root li {
-  font-family: "DM Sans", sans-serif;
+  font-family: "InterVariable", sans-serif;
 }
 /* navy text helpers for light bg pages */
 .text-navy {

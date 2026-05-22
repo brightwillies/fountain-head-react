@@ -47,7 +47,7 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
         <div
           className={`mb-6 transition-all duration-700 delay-100 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
-          <span className="text-gold text-[11px] tracking-[0.35em] uppercase font-body font-medium">
+          <span className="text-white text-[11px] tracking-[0.35em] uppercase font-body font-medium">
             Fountainhead Christian School
           </span>
         </div>
@@ -64,7 +64,8 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
           style={{
             fontSize: 'clamp(3.5rem, 9vw, 9rem)',
             color: 'transparent',
-            WebkitTextStroke: '1.5px #c9a84c',
+            WebkitTextStroke: '1.5px #fcfbf8',
+            // WebkitTextStroke: '1.5px #c9a84c',
           }}
         >
           Believe.
@@ -84,7 +85,7 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
         >
           <Link
             href="/"
-            className="px-8 py-4 bg-gold text-navy font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold-light transition-colors duration-300"
+            className="px-8 py-4 bg-white text-navy font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold-light transition-colors duration-300"
           >
             Inquire Now
           </Link>
@@ -96,7 +97,7 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
           </Link>
           <Link
             href="/admission"
-            className="px-8 py-4 border border-gold/40 text-gold font-body font-light text-sm tracking-widest uppercase hover:border-gold hover:bg-gold/10 transition-all duration-300"
+            className="px-8 py-4 border border-white/40 text-white font-body font-light text-sm tracking-widest uppercase hover:border-gold hover:bg-gold/10 transition-all duration-300"
           >
            Admissions
           </Link>

@@ -20,7 +20,7 @@
   --off-white: #f8f7f4;
   --font-display: "Cormorant Garamond", serif;
   /* --font-body: "DM Sans", sans-serif; */
-  --font-body: "neue-haas-unica"f;
+  --font-body: "neue-haas-unica", sans-serif;
 }
 
 * {

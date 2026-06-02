@@ -70,13 +70,15 @@ export default function Navbar({
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${getNavbarBackground()}`}
       >
-        <div className="max-w-screen-xl mx-auto px-6 flex items-center justify-between h-20">
-          {/* Logo */}
+        <div className="max-w-screen-xl mx-auto px-6 py-17 flex items-center justify-between h-20">
+          {/* main nav links */}
+       
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full border-2 border-navy flex items-center justify-center">
-              <span className="text-navy font-display font-bold text-lg leading-none">
+            <div className="w-20 h-20   flex items-center justify-center">
+              <img   className="my-2"  src="images/toplogo.png" alt="" />
+              {/* <span className="text-navy font-display font-bold text-lg leading-none">
                 fcs
-              </span>
+              </span> */}
             </div>
             <div>
               <div className="text-navy font-display font-semibold text-lg leading-tight tracking-wide">
@@ -93,7 +95,8 @@ export default function Navbar({
             <Link
               href="/"
               className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
-            >
+             style={{ fontFamily: "neue-haas-unica, sans-serif" }}
+           >
               Home
             </Link>
 

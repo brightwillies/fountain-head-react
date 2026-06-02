@@ -2,7 +2,7 @@ import PageLayout from "@/components/PageLayout";
 
 const sidebar = (
   <>
-    {/* Student Zone Links */}
+    {/* Admission Links */}
     <div className="mb-6">
       <h4
         className="font-display text-base mb-3 pb-2"
@@ -24,7 +24,29 @@ const sidebar = (
       </ul>
     </div>
 
-  
+    {/* Curriculum Links */}
+    <div className="mb-6">
+      <h4
+        className="font-display text-base mb-3 pb-2"
+        style={{ color: '#fff', borderBottom: '1px solid rgba(255,255,255,0.12)' }}
+      >
+        Curriculum
+      </h4>
+      <ul className="space-y-1">
+        {[
+          { label: 'Crèche', href: '/creche-curriculum' },
+          { label: 'Pre-School', href: '/pre-school-curriculum' },
+          { label: 'Lower & Upper School', href: '/lower-upper-school-curriculum' },
+          { label: 'Junior High School', href: '/junior-high-school-curriculum' },
+        ].map((l) => (
+          <li key={l.label}>
+            <a href={l.href} className="font-body text-sm py-1.5 block transition-colors duration-200 hover:text-white" style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>
+              {l.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
 
     {/* Apply CTA card */}
     <div className="p-6 mb-6" style={{ background: '#10147c', border: '1px solid rgba(201,168,76,0.25)' }}>
@@ -49,24 +71,23 @@ const sidebar = (
   </>
 );
 
-const clubs = [
-  { name: "Drama Club", image: "images/clubs/drama_img.jpg" },
-  { name: "Cadet", image: "images/clubs/cadet_img.jpg" },
-  { name: "Literacy Club", image: "images/clubs/literacy_img.jpg" },
-  { name: "Bible Club", image: "images/clubs/bible_img.jpg" },
-  { name: "Red Cross Club", image: "images/clubs/redcross_img.jpg" },
-  { name: "Science & Math Club", image: "images/clubs/science_img.jpg" },
+const meals = [
+  { name: "Monday", image: "images/meals/monday.jpg" },
+  { name: "Tuesday", image: "images/meals/tuesday.jpg" },
+  { name: "Wednesday", image: "images/meals/wednesday.jpg" },
+  { name: "Thursday", image: "images/meals/thursday.jpg" },
+  { name: "Friday", image: "images/meals/friday.jpg" },
 ];
 
 export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "School Clubs",
+        title: "School Meals",
         image:
           "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
       }}
-      breadcrumbs={[{ label: "School Clubs" }]}
+      breadcrumbs={[{ label: "School Meals" }]}
       sidebar={sidebar}
     >
       {/* ── Dark navy content panel ── */}
@@ -79,24 +100,22 @@ export default function AdmissionPage() {
             Fountainhead Christian School
           </span>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: 'white', lineHeight: 1.2, fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', marginBottom: '1rem' }}>
-            Discover Our School Clubs
+            Discover Our School Meals
           </h2>
-          <p style={{ color: 'rgba(255,255,255,0.65)', fontFamily: 'var(--font-body)', fontWeight: 300, fontSize: '0.95rem', lineHeight: 1.8 }}>
-            We organize various events throughout the academic year. We run clubs such as:
-          </p>
+         
         </div>
 
         {/* Clubs grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-          {clubs.map((club, index) => (
+          {meals.map((meal, index) => (
             <div
               key={index}
               className="group relative overflow-hidden cursor-pointer"
               style={{ aspectRatio: '4/3' }}
             >
               <img
-                src={club.image}
-                alt={club.name}
+                src={meal.image}
+                alt={meal.name}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               {/* Gradient overlay */}
@@ -106,7 +125,7 @@ export default function AdmissionPage() {
               {/* Club name */}
               <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
                 <h3 className="font-display text-white text-xl md:text-2xl font-semibold mb-2">
-                  {club.name}
+                  {meal.name}
                 </h3>
                 <div
                   className="mx-auto h-0.5 transition-all duration-300 group-hover:w-16"

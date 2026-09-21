@@ -81,11 +81,11 @@ export default function Navbar({
               </span> */}
             </div>
             <div>
-              <div className="text-navy font-display font-semibold text-lg leading-tight tracking-wide">
-                Fountainhead Christian School
+              <div className="text-navy font-display font-semibold text-lg uppercase mt-2 leading-tight tracking-wide">
+                Fountainhead 
               </div>
-              <div className="text-navy text-[10px] tracking-[0.2em] uppercase font-body font-light">
-                Ghana
+              <div className="text-navy text-[10px] font-semibold tracking-[0.2em] uppercase font-body font-light">
+               Christian School
               </div>
             </div>
           </Link>
@@ -94,7 +94,7 @@ export default function Navbar({
           <div className="hidden lg:flex items-center gap-6">
             <Link
               href="/"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:underline text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
              style={{ fontFamily: "neue-haas-unica, sans-serif" }}
            >
               Home
@@ -102,28 +102,28 @@ export default function Navbar({
 
             <Link
               href="/admission"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:underline text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
             >
               Admissions{" "}
             </Link>
 
              <Link
               href="/creche-curriculum"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:underline text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
             >
               Curriculim{" "}
             </Link>
 
                <Link
               href="/school-clubs"
-              className="text-navy/80 hover:text-gold text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:underline text-sm font-body font-bold tracking-widest uppercase transition-colors duration-200"
             >
               Student Zone{" "}
             </Link>
 
             <Link
               href="https://portal.fcs.edu.gh/parent/login.php"
-              className="px-4 py-2 border border-navy text-navy text-xs font-body font-bold  tracking-widest uppercase hover:bg-gold hover:text-navy transition-all duration-300"
+              className="px-4 py-2 border border-navy text-navy text-xs font-body font-bold  tracking-widest uppercase hover:bg-white hover:text-navy transition-all duration-300"
             >
               
               Fountainhead WEB

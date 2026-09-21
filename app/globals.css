@@ -18,9 +18,10 @@
   --gold-light: #e8c96e; */
   --white: #ffffff;
   --off-white: #f8f7f4;
-  --font-display: "Cormorant Garamond", serif;
+  /* --font-display: "Cormorant Garamond", serif; */
+  --font-display:"neue-haas-unica",
   /* --font-body: "DM Sans", sans-serif; */
-  --font-body: "neue-haas-unica", sans-serif;
+  --font-body: "neue-haas-unica";
 }
 
 * {

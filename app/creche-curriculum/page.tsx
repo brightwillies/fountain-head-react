@@ -99,9 +99,8 @@ export default function AdmissionPage() {
       hero={{
         title: "Creche Curriculum",
 
-        image:
-          "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
-      }}
+       image: 'images/banners/banner3.jpg',
+        }}
       breadcrumbs={[{ label: "Creche Curriculum" }]}
       sidebar={sidebar}
     >

@@ -72,9 +72,8 @@ export default function AdmissionPage() {
       hero={{
         title: "Admission Policy",
 
-        image:
-          "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
-      }}
+       image: 'images/banners/banner2.jpg',
+        }}
       breadcrumbs={[{ label: "Admission Policy" }]}
       sidebar={sidebar}
     >

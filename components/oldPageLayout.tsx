@@ -18,6 +18,7 @@ interface PageLayoutProps {
   sidebar?: React.ReactNode
 }
 
+
 export default function PageLayout({ children, hero, breadcrumbs, sidebar }: PageLayoutProps) {
   const [loaded, setLoaded] = useState(false)
   useEffect(() => { setTimeout(() => setLoaded(true), 80) }, [])
@@ -26,13 +27,19 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
     <div className="page-root" style={{ overflowY: 'auto', overflowX: 'hidden' }}>
       <Navbar isHeroSlide={false} />
 
-      {/* ── Page Hero Image ─────────────────────────────── */}
+      {/* ── Page Hero ─────────────────────────────── */}
       <div className="relative h-screen overflow-hidden">
         <img
           src={hero.image}
           alt={hero.title}
           className="absolute inset-0 w-full h-full object-cover"
           style={{ filter: 'brightness(0.55)' }}
+        />
+        <div
+          className="absolute inset-0"
+          // style={{
+          //   background: 'linear-gradient(135deg, rgba(10,14,92,0.85) 0%, rgba(16,20,124,0.50) 60%, rgba(10,14,92,0.80) 100%)',
+          // }}
         />
         {/* Grain */}
         <div
@@ -42,14 +49,8 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
             backgroundSize: '128px',
           }}
         />
-      </div>
 
-      {/* ── Hero Text (below the image) ─────────────────────────────── */}
-      <div
-        className="px-8 md:px-20 pt-12 pb-10"
-        style={{ background: '#0a0e5c' }}
-      >
-        <div className="max-w-screen-xl mx-auto">
+        <div className="relative z-10 h-full flex flex-col justify-end px-8 md:px-20 pb-16">
           {/* Breadcrumbs */}
           {breadcrumbs && (
             <nav className="flex items-center gap-2 mb-4">
@@ -102,6 +103,7 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
       </div>
 
       {/* ── Page Body ─────────────────────────────── */}
+      {/* <div style={{ background: '#f8f7f4', minHeight: '60vh' }}> */}
       <div style={{ background: '#0a0e5c', minHeight: '60vh' }}>
         <div className="max-w-screen-xl mx-auto px-8 md:px-20 py-16">
           {sidebar ? (

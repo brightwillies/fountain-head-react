@@ -71,9 +71,9 @@ export default function AdmissionPage() {
       hero={{
         title: "Lowwer & Upper School Curriculum",
 
-        image:
-          "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
-      }}
+        image: 'images/banners/banner5.jpg',
+     
+        }}
       breadcrumbs={[{ label: "Lower & Upper School Curriculum" }]}
       sidebar={sidebar}
     >

@@ -24,7 +24,7 @@ const sidebar = (
       <a
         href="/inquire"
         className="block text-center py-2.5 font-body text-xs tracking-widest uppercase font-semibold"
-        style={{ background: '#10147c', color: '#c9a84c' }}
+        style={{ background: '#10147c', color: '#f6f4ee' }}
       >
         Inquire About Upper School
       </a>

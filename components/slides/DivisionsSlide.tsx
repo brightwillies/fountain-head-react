@@ -8,7 +8,7 @@ const divisions = [
     grades: 'Bible',
     desc: 'The Bible is the only authoritative source of special Revelation (absolute truth). We affirm the importance of legitimately incorporating biblical truth into all daily activities of our school life.',
     image: 'images/values_bible.jpg',
-    color: '#c9a84c',
+    color: '#f6f4ee',
     href: '/primary-school',
   },
   {
@@ -40,7 +40,7 @@ const divisions = [
     grades: 'Deliberate',
     desc: 'A challenging, balanced, holistic curriculum We have a challenging academic curriculum (one that is substantive, deliberate and selective). Such a curriculum will nurture an accurate, growing understanding of human beings and their actions, the physical universe, and the realm of ideas. More than just teaching pupils/students what to think, it will teach students how to think, both biblically and critically.',
     image: 'images/values_diversity.jpg',
-    color: '#c9a84c',
+    color: '#f6f4ee',
     href: '/upper-school',
   },
 ]
@@ -94,7 +94,7 @@ export default function DivisionsSlide({ isActive }: { isActive: boolean }) {
             </div>
             <Link
               href="/admission"
-              className="text-white/50 text-xs tracking-widest uppercase font-body hover:text-gold transition-colors hidden md:block"
+              className="text-white/50 text-xs tracking-widest uppercase font-body hover:text-navy-dark transition-colors hidden md:block"
             >
               Apply Now →
             </Link>

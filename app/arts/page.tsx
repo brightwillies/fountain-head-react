@@ -28,7 +28,7 @@ const sidebar = (
             <div className="flex-none text-center">
               <div className="font-display text-sm font-semibold" style={{ color: '#10147c' }}>{e.date}</div>
             </div>
-            <div className="w-px self-stretch" style={{ background: '#c9a84c40' }} />
+            <div className="w-px self-stretch" style={{ background: '#f6f4ee40' }} />
             <p className="font-body text-xs leading-relaxed" style={{ color: '#10147c80' }}>{e.event}</p>
           </div>
         ))}

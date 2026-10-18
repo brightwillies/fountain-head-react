@@ -19,7 +19,7 @@ export default function ContactSlide({ isActive }: { isActive: boolean }) {
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full opacity-20"
-          style={{ background: 'radial-gradient(circle, #c9a84c, transparent 65%)' }}
+          style={{ background: 'radial-gradient(circle, #f6f4ee, transparent 65%)' }}
         />
         <div
           className="absolute top-0 right-0 w-1/2 h-full opacity-[0.06]"
@@ -40,7 +40,7 @@ export default function ContactSlide({ isActive }: { isActive: boolean }) {
         <div className="flex-1 flex flex-col justify-center max-w-2xl">
           <div className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <span className="gold-rule" />
-            <span className="text-gold text-[11px] tracking-[0.35em] uppercase font-body block mb-4">
+            <span className="text-navy-dark text-[11px] tracking-[0.35em] uppercase font-body block mb-4">
               Get Started
             </span>
             <h2
@@ -54,7 +54,7 @@ export default function ContactSlide({ isActive }: { isActive: boolean }) {
               style={{
                 fontSize: 'clamp(2.5rem, 5vw, 5.5rem)',
                 color: 'transparent',
-                WebkitTextStroke: '1.5px #c9a84c',
+                WebkitTextStroke: '1.5px #f6f4ee',
               }}
             >
               The Walker Family?
@@ -72,7 +72,7 @@ export default function ContactSlide({ isActive }: { isActive: boolean }) {
               </Link>
               <Link
                 href="/plan-your-visit"
-                className="px-10 py-4 border border-white/30 text-white font-body text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-all"
+                className="px-10 py-4 border border-white/30 text-white font-body text-sm tracking-widest uppercase hover:border-gold hover:text-navy-dark transition-all"
               >
                 Visit Campus
               </Link>
@@ -97,7 +97,7 @@ export default function ContactSlide({ isActive }: { isActive: boolean }) {
             {/* Social */}
             <div className="flex gap-6">
               {['Facebook', 'Instagram', 'YouTube', 'LinkedIn'].map((s) => (
-                <a key={s} href="#" className="text-white/30 hover:text-gold text-[10px] tracking-widest uppercase font-body transition-colors">
+                <a key={s} href="#" className="text-white/30 hover:text-navy-dark text-[10px] tracking-widest uppercase font-body transition-colors">
                   {s}
                 </a>
               ))}

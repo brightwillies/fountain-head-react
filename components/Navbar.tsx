@@ -167,7 +167,7 @@ export default function Navbar({
                 <Link
                   key={item}
                   href={`/${item.toLowerCase().replace(" ", "-")}`}
-                  className="px-4 py-2 border border-gold/50 text-gold text-xs tracking-widest uppercase hover:bg-gold/10 transition-all"
+                  className="px-4 py-2 border border-gold/50 text-navy-dark text-xs tracking-widest uppercase hover:bg-gold/10 transition-all"
                   onClick={() => setMenuOpen(false)}
                 >
                   {item}
@@ -181,12 +181,12 @@ export default function Navbar({
                 <div key={item.label} className="group">
                   <Link
                     href={item.href}
-                    className="block font-display text-xl text-gold mb-3 hover:text-gold-light transition-colors"
+                    className="block font-display text-xl text-navy-dark mb-3 hover:text-navy-dark-light transition-colors"
                     onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
                   </Link>
-                  <div className="w-8 h-px bg-gold/40 mb-4" />
+                  <div className="w-8 h-px bg-navy-dark/40 mb-4" />
                   <ul className="space-y-2">
                     {item.children.map((child) => (
                       <li key={child}>
@@ -215,7 +215,7 @@ export default function Navbar({
                   <a
                     key={s}
                     href="#"
-                    className="text-white/40 hover:text-gold text-xs tracking-widest uppercase transition-colors"
+                    className="text-white/40 hover:text-navy-dark text-xs tracking-widest uppercase transition-colors"
                   >
                     {s}
                   </a>

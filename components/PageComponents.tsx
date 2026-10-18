@@ -10,11 +10,11 @@ export function SectionHeader({ eyebrow, title, subtitle, dark = false }: {
   return (
     <div className="mb-10">
       {eyebrow && (
-        <span className="text-[11px] tracking-[0.35em] uppercase font-body block mb-3" style={{ color: '#c9a84c' }}>
+        <span className="text-[11px] tracking-[0.35em] uppercase font-body block mb-3" style={{ color: '#edece8' }}>
           {eyebrow}
         </span>
       )}
-      <div className="w-10 h-0.5 mb-4" style={{ background: '#c9a84c' }} />
+      <div className="w-10 h-0.5 mb-4" style={{ background: '#e4e0d3' }} />
       <h2
         className={`font-display font-light leading-tight ${dark ? 'text-white' : 'text-navy'}`}
         style={{ fontSize: 'clamp(1.8rem, 3.5vw, 3.2rem)' }}
@@ -68,7 +68,7 @@ export function FeatureGrid({ items }: {
           className="p-6 border border-navy/10 hover:border-navy/30 transition-colors group"
           style={{ background: 'white' }}
         >
-          {item.icon && <div className="text-2xl mb-3" style={{ color: '#c9a84c' }}>{item.icon}</div>}
+          {item.icon && <div className="text-2xl mb-3" style={{ color: '#edece7' }}>{item.icon}</div>}
           <h3 className="font-display text-lg mb-2" style={{ color: '#10147c' }}>{item.title}</h3>
           <p className="font-body text-sm leading-relaxed" style={{ color: '#10147c80' }}>{item.desc}</p>
         </div>
@@ -93,7 +93,7 @@ export function CTABanner({ title, subtitle, cta, href }: {
       <Link
         href={href}
         className="flex-none px-8 py-4 font-body font-semibold text-xs tracking-widest uppercase transition-colors"
-        style={{ background: '#c9a84c', color: '#10147c' }}
+        style={{ background: '#fcfcfb', color: '#10147c' }}
       >
         {cta}
       </Link>
@@ -121,7 +121,7 @@ export function SidebarLinks({ title, links }: {
             >
               <span
                 className="w-0 group-hover:w-3 h-px transition-all duration-200"
-                style={{ background: '#c9a84c' }}
+                style={{ background: '#efede9' }}
               />
               <span className="group-hover:text-navy transition-colors">{l.label}</span>
             </Link>

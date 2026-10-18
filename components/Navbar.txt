@@ -92,28 +92,28 @@ export default function Navbar({
           <div className="hidden lg:flex items-center gap-6">
             <Link
               href="/"
-              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:text-navy-dark text-sm font-body tracking-widest uppercase transition-colors duration-200"
             >
               Home
             </Link>
 
             <Link
               href="/admission"
-              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase   transition-colors duration-200"
+              className="text-navy/80 hover:text-navy-dark text-sm font-body tracking-widest uppercase   transition-colors duration-200"
             >
               Admissions{" "}
             </Link>
 
              <Link
               href="/creche-curriculum"
-              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:text-navy-dark text-sm font-body tracking-widest uppercase transition-colors duration-200"
             >
               Curriculim{" "}
             </Link>
 
                <Link
               href="/school-clubs"
-              className="text-navy/80 hover:text-gold text-sm font-body tracking-widest uppercase transition-colors duration-200"
+              className="text-navy/80 hover:text-navy-dark text-sm font-body tracking-widest uppercase transition-colors duration-200"
             >
               Student Zone{" "}
             </Link>
@@ -164,7 +164,7 @@ export default function Navbar({
                 <Link
                   key={item}
                   href={`/${item.toLowerCase().replace(" ", "-")}`}
-                  className="px-4 py-2 border border-gold/50 text-gold text-xs tracking-widest uppercase hover:bg-gold/10 transition-all"
+                  className="px-4 py-2 border border-gold/50 text-navy-dark text-xs tracking-widest uppercase hover:bg-gold/10 transition-all"
                   onClick={() => setMenuOpen(false)}
                 >
                   {item}
@@ -178,7 +178,7 @@ export default function Navbar({
                 <div key={item.label} className="group">
                   <Link
                     href={item.href}
-                    className="block font-display text-xl text-gold mb-3 hover:text-gold-light transition-colors"
+                    className="block font-display text-xl text-navy-dark mb-3 hover:text-navy-dark-light transition-colors"
                     onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
@@ -212,7 +212,7 @@ export default function Navbar({
                   <a
                     key={s}
                     href="#"
-                    className="text-white/40 hover:text-gold text-xs tracking-widest uppercase transition-colors"
+                    className="text-white/40 hover:text-navy-dark text-xs tracking-widest uppercase transition-colors"
                   >
                     {s}
                   </a>

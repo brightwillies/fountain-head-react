@@ -218,7 +218,7 @@ export default function WelcomeMessage({ isActive }: { isActive: boolean }) {
                 style={{
                   background: "rgba(201,168,76,0.15)",
                   border: "1px solid rgba(201,168,76,0.35)",
-                  color: "#c9a84c",
+                  color: "#f6f4ee",
                 }}
               >
                 {tabs.find((t) => t.key === tab)?.label}

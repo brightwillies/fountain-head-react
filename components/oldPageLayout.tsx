@@ -54,18 +54,18 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
           {/* Breadcrumbs */}
           {breadcrumbs && (
             <nav className="flex items-center gap-2 mb-4">
-              <Link href="/" className="text-white/40 hover:text-gold text-[10px] tracking-widest uppercase font-body transition-colors">
+              <Link href="/" className="text-white/40 hover:text-navy-dark text-[10px] tracking-widest uppercase font-body transition-colors">
                 Home
               </Link>
               {breadcrumbs.map((b, i) => (
                 <span key={i} className="flex items-center gap-2">
-                  <span className="text-gold/40 text-[10px]">›</span>
+                  <span className="text-navy-dark/40 text-[10px]">›</span>
                   {b.href ? (
-                    <Link href={b.href} className="text-white/40 hover:text-gold text-[10px] tracking-widest uppercase font-body transition-colors">
+                    <Link href={b.href} className="text-white/40 hover:text-navy-dark text-[10px] tracking-widest uppercase font-body transition-colors">
                       {b.label}
                     </Link>
                   ) : (
-                    <span className="text-gold text-[10px] tracking-widest uppercase font-body">{b.label}</span>
+                    <span className="text-navy-dark text-[10px] tracking-widest uppercase font-body">{b.label}</span>
                   )}
                 </span>
               ))}
@@ -75,7 +75,7 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
           {hero.eyebrow && (
             <span
               className={`text-[11px] tracking-[0.35em] uppercase font-body block mb-3 transition-all duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-              style={{ color: hero.accent || '#c9a84c' }}
+              style={{ color: hero.accent || '#f6f4ee' }}
             >
               {hero.eyebrow}
             </span>
@@ -97,7 +97,7 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
           {/* Gold rule line */}
           <div
             className={`mt-6 h-px transition-all duration-1000 delay-300 ${loaded ? 'w-20 opacity-100' : 'w-0 opacity-0'}`}
-            style={{ background: hero.accent || '#c9a84c' }}
+            style={{ background: hero.accent || '#f6f4ee' }}
           />
         </div>
       </div>
@@ -129,7 +129,7 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
       
             ].map((col) => (
               <div key={col.title}>
-                <h3 className="font-display text-gold text-md mb-3">{col.title}</h3>
+                <h3 className="font-display text-navy-dark text-md mb-3">{col.title}</h3>
                 <ul className="space-y-2">
                   {col.links.map((l) => (
                     <li key={l}>

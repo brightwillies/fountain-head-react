@@ -64,7 +64,7 @@
               { title: 'Support', links: ['The Walker Fund', 'Matching Gifts', 'Georgia GOAL', 'Make a Gift'] },
             ].map((col) => (
               <div key={col.title}>
-                <h4 className="font-display text-gold text-sm mb-3">{col.title}</h4>
+                <h4 className="font-display text-navy-dark text-sm mb-3">{col.title}</h4>
                 <ul className="space-y-2">
                   {col.links.map((l) => (
                     <li key={l}>
@@ -92,9 +92,9 @@
       ///
 
 
-              className="fixed left-5 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-gold transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
+              className="fixed left-5 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-navy-dark transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
 
 
               //
 
-                      className="fixed right-14 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-gold transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
+                      className="fixed right-14 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-navy-dark transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"

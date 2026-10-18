@@ -51,7 +51,7 @@ export default function CommunitySlide({ isActive }: { isActive: boolean }) {
               {['We Believe', '·', 'State Champions', '·', 'College Ready', '·', 'Arts Excellence', '·', 'Community First', '·', 'PreK–12 · Marietta GA', '·'].map((item, i) => (
                 <span
                   key={i}
-                  className={`text-[10px] tracking-[0.3em] uppercase font-body ${item === '·' ? 'text-gold' : 'text-white/30'}`}
+                  className={`text-[10px] tracking-[0.3em] uppercase font-body ${item === '·' ? 'text-navy-dark' : 'text-white/30'}`}
                 >
                   {item}
                 </span>
@@ -68,12 +68,12 @@ export default function CommunitySlide({ isActive }: { isActive: boolean }) {
           <span className="gold-rule" />
           <div className="flex items-end justify-between flex-wrap gap-4">
             <div>
-              <span className="text-gold text-[11px] tracking-[0.35em] uppercase font-body block mb-2">Latest News</span>
+              <span className="text-navy-dark text-[11px] tracking-[0.35em] uppercase font-body block mb-2">Latest News</span>
               <h2 className="font-display font-light text-white" style={{ fontSize: 'clamp(2rem, 3.5vw, 3.5rem)' }}>
-                Life at <span className="italic text-gold">Walker</span>
+                Life at <span className="italic text-navy-dark">Walker</span>
               </h2>
             </div>
-            <Link href="/news" className="text-white/40 text-xs tracking-widest uppercase font-body hover:text-gold transition-colors hidden sm:block">
+            <Link href="/news" className="text-white/40 text-xs tracking-widest uppercase font-body hover:text-navy-dark transition-colors hidden sm:block">
               All News →
             </Link>
           </div>
@@ -96,12 +96,12 @@ export default function CommunitySlide({ isActive }: { isActive: boolean }) {
                   className="card-img w-full h-full object-cover"
                 />
                 <div className="absolute inset-0" style={{ background: 'rgba(10,14,92,0.5)' }} />
-                <span className="absolute top-3 left-3 text-[9px] tracking-[0.25em] uppercase font-body font-medium text-gold bg-navy/80 px-2 py-1">
+                <span className="absolute top-3 left-3 text-[9px] tracking-[0.25em] uppercase font-body font-medium text-navy-dark bg-navy/80 px-2 py-1">
                   {item.tag}
                 </span>
               </div>
               <div className="p-4 border border-t-0 border-white/10 group-hover:border-gold/25 transition-colors" style={{ background: 'rgba(16,20,124,0.35)' }}>
-                <h3 className="font-display text-white text-base leading-snug mb-2 group-hover:text-gold transition-colors">
+                <h3 className="font-display text-white text-base leading-snug mb-2 group-hover:text-navy-dark transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-white/35 font-body text-[10px] tracking-widest uppercase">{item.date}</p>
@@ -120,7 +120,7 @@ export default function CommunitySlide({ isActive }: { isActive: boolean }) {
               href={link.href}
               className="flex items-center gap-3 p-3 border border-white/10 hover:border-gold/30 hover:bg-gold/5 transition-all group"
             >
-              <span className="text-gold text-base">{link.icon}</span>
+              <span className="text-navy-dark text-base">{link.icon}</span>
               <span className="text-white/60 group-hover:text-white font-body text-xs tracking-wide transition-colors">
                 {link.label}
               </span>

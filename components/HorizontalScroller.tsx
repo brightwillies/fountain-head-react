@@ -147,7 +147,7 @@ export default function HorizontalScroller() {
       <button
         onClick={goPrev}
         disabled={current === 0 || isAnimating}
-          className="fixed left-5 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-gold transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
+          className="fixed left-5 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-white hover:text-navy-dark transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
         aria-label="Previous"
       >
         <svg
@@ -164,7 +164,7 @@ export default function HorizontalScroller() {
       <button
         onClick={goNext}
         disabled={current === SLIDES.length - 1 || isAnimating}     
-         className="fixed right-14 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-gold hover:text-gold transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
+         className="fixed right-14 top-1/2 -translate-y-1/2 z-50 p-3 border border-white/20 text-white/50 hover:border-white hover:text-white transition-all disabled:opacity-0 hidden lg:flex items-center justify-center"
         aria-label="Next"
       >
         <svg
@@ -181,7 +181,7 @@ export default function HorizontalScroller() {
 
       {/* Slide counter */}
       <div className="fixed bottom-8 left-10 z-50 hidden lg:flex items-center gap-2">
-        <span className="font-display text-gold text-lg">
+        <span className="font-display text-navy-dark text-lg">
           {String(current + 1).padStart(2, "0")}
         </span>
         <span className="text-white/20 font-body text-xs"> / </span>

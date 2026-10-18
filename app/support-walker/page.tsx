@@ -16,14 +16,14 @@ const sidebar = (
       ]}
     />
     <div className="p-6 border border-navy/10 mb-6" style={{ background: '#10147c' }}>
-      <h4 className="font-display text-gold text-base mb-2">Make a Gift Today</h4>
+      <h4 className="font-display text-navy-dark text-base mb-2">Make a Gift Today</h4>
       <p className="text-white/55 font-body text-xs leading-relaxed mb-4">
         Your generosity directly supports Walker students, faculty, and programs. Every gift matters.
       </p>
       <a
         href="/make-a-gift"
         className="block text-center py-3 font-body text-xs tracking-widest uppercase font-semibold"
-        style={{ background: '#c9a84c', color: '#10147c' }}
+        style={{ background: '#f6f4ee', color: '#10147c' }}
       >
         Donate Now
       </a>
@@ -33,7 +33,7 @@ const sidebar = (
       <p className="font-body text-xs leading-relaxed mb-3" style={{ color: '#10147c80' }}>
         Georgia taxpayers can redirect a portion of their state income tax liability to Walker through the GOAL scholarship program.
       </p>
-      <a href="/georgia-goal" className="text-xs tracking-widest uppercase font-body" style={{ color: '#c9a84c' }}>
+      <a href="/georgia-goal" className="text-xs tracking-widest uppercase font-body" style={{ color: '#f6f4ee' }}>
         Learn How →
       </a>
     </div>
@@ -103,7 +103,7 @@ export default function SupportWalkerPage() {
             We see the direct impact in our children's lives — in their teachers,
             their programs, and the community that holds them."
           </p>
-          <footer className="font-body text-xs tracking-widest uppercase" style={{ color: '#c9a84c' }}>
+          <footer className="font-body text-xs tracking-widest uppercase" style={{ color: '#f6f4ee' }}>
             — Walker Alumni Parents
           </footer>
         </blockquote>

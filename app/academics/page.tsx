@@ -25,11 +25,11 @@ const sidebar = (
       <div className="space-y-3">
         {['Harvard University', 'Georgia Tech', 'University of Georgia', 'Duke University', 'Vanderbilt University'].map((school) => (
           <div key={school} className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full flex-none" style={{ background: '#c9a84c' }} />
+            <span className="w-1.5 h-1.5 rounded-full flex-none" style={{ background: '#f6f4ee' }} />
             <span className="font-body text-xs" style={{ color: '#10147c80' }}>{school}</span>
           </div>
         ))}
-        <a href="/college-counseling" className="block mt-3 text-xs tracking-widest uppercase font-body" style={{ color: '#c9a84c' }}>
+        <a href="/college-counseling" className="block mt-3 text-xs tracking-widest uppercase font-body" style={{ color: '#f6f4ee' }}>
           Full List →
         </a>
       </div>

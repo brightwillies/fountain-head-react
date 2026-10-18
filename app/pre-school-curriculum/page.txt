@@ -32,7 +32,7 @@ const sidebar = (
       className="p-6 border border-navy/10 mb-6"
       style={{ background: "#10147c" }}
     >
-      <h4 className="font-display text-gold text-base mb-2">
+      <h4 className="font-display text-navy-dark text-base mb-2">
         Apply for 2025–26
       </h4>
       <p className="text-white/55 font-body text-xs mb-4 leading-relaxed">
@@ -42,7 +42,7 @@ const sidebar = (
       <a
         href="/inquire"
         className="block text-center py-3 text-xs tracking-widest uppercase font-body font-semibold transition-colors"
-        style={{ background: "#c9a84c", color: "#10147c" }}
+        style={{ background: "#f6f4ee", color: "#10147c" }}
       >
         Start Application
       </a>

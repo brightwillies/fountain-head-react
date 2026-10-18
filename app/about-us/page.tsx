@@ -31,7 +31,7 @@ const sidebar = (
             key={l.label}
             href={l.href}
             className="block text-center py-2 text-xs tracking-widest uppercase font-body font-semibold transition-colors"
-            style={{ background: '#10147c', color: '#c9a84c' }}
+            style={{ background: '#10147c', color: '#f6f4ee' }}
           >
             {l.label}
           </a>

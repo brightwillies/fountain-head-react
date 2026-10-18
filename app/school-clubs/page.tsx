@@ -14,6 +14,7 @@ const sidebar = (
         {[
           { label: 'School Clubs', href: '/school-clubs' },
           { label: 'School Meals', href: '/school-meals' },
+            { label: 'Our Rules', href: '/our-rules' },
         ].map((l) => (
           <li key={l.label}>
             <a href={l.href} className="font-body text-sm py-1.5 block transition-colors duration-200 hover:text-white" style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>

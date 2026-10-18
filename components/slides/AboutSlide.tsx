@@ -49,14 +49,14 @@ export default function AboutSlide({ isActive }: { isActive: boolean }) {
         <div
           className="absolute -top-24 -right-24 w-96 h-96 rounded-full opacity-10"
           style={{
-            background: "radial-gradient(circle, #c9a84c, transparent 70%)",
+            background: "radial-gradient(circle, #f6f4ee, transparent 70%)",
           }}
         />
         <div
           className="absolute bottom-0 left-1/4 w-64 h-64 opacity-5"
           style={{
             background: "transparent",
-            border: "60px solid #c9a84c",
+            border: "60px solid #f6f4ee",
             borderRadius: "50%",
             transform: "translateY(30%)",
           }}
@@ -76,7 +76,7 @@ export default function AboutSlide({ isActive }: { isActive: boolean }) {
               <path
                 d="M 60 0 L 0 0 0 60"
                 fill="none"
-                stroke="#c9a84c"
+                stroke="#f6f4ee"
                 strokeWidth="0.5"
               />
             </pattern>

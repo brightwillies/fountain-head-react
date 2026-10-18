@@ -14,7 +14,7 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
   }, [isActive])
 
   return (
-    <div className="slide bg-navy-dark">
+    <div className="slide bg-white">
       {/* Video Background */}
       <video
         className="video-bg"
@@ -65,7 +65,7 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
             fontSize: 'clamp(3.5rem, 9vw, 9rem)',
             color: 'transparent',
             WebkitTextStroke: '1.5px #fcfbf8',
-            // WebkitTextStroke: '1.5px #c9a84c',
+            // WebkitTextStroke: '1.5px #f6f4ee',
           }}
         >
           Believe.
@@ -85,19 +85,19 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
         >
           <Link
             href="/"
-            className="px-8 py-4 bg-white text-navy font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold-light transition-colors duration-300"
+            className="px-8 py-4 bg-white text-navy font-body font-semibold text-sm tracking-widest uppercase hover:bg-=white transition-colors duration-300"
           >
             Inquire Now
           </Link>
           <Link
             href="/plan-your-visit"
-            className="px-8 py-4 border border-white/40 text-white font-body font-light text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-all duration-300"
+            className="px-8 py-4 border border-white/40 text-white font-body font-light text-sm tracking-widest uppercase hover:border-navy-dark hover:text-navy-dark transition-all duration-300"
           >
             Plan a Visit
           </Link>
           <Link
             href="/admission"
-            className="px-8 py-4 border border-white/40 text-white font-body font-light text-sm tracking-widest uppercase hover:border-gold hover:bg-gold/10 transition-all duration-300"
+            className="px-8 py-4 border border-white/40 text-white font-body font-light text-sm tracking-widest uppercase hover:border-white hover:bg-white/10 transition-all duration-300"
           >
            Admissions
           </Link>
@@ -107,7 +107,7 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
       {/* Scroll hint */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 hidden md:flex">
         <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase font-body">Scroll to explore</span>
-        <div className="scroll-hint text-gold/60">
+        <div className="scroll-hint text-white">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
@@ -125,7 +125,7 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
             { num: '15:1', label: 'Student-Teacher Ratio' },
           ].map((s) => (
             <div key={s.label} className="hidden sm:bloc">
-              <div className="font-display text-2xl text-gold font-semibold mt-1">{s.num}</div>
+              <div className="font-display text-2xl text-navy-dark font-semibold mt-1">{s.num}</div>
               <div className="text-white/50 text-[10px] tracking-widest uppercase font-body">{s.label}</div>
             </div>
           ))}

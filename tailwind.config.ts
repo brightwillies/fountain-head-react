@@ -5,7 +5,7 @@ const config: Config = {
     extend: {
       colors: {
         navy: { DEFAULT: '#10147c', dark: '#0a0e5c', light: '#1a1fa0', muted: '#1e2399' },
-        gold: { DEFAULT: '#c9a84c', light: '#e8c96e' },
+        gold: { DEFAULT: '#FEFEFE', light: '#F8F8F8' },
       },
       fontFamily: {
         display: ['var(--font-display)'],

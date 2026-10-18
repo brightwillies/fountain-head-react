@@ -3,11 +3,10 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const steps = [
-  { num: '01', title: 'Prepare Documents', desc: 'The required documents include immunization records, school records, a passport photo and a copy of the student\'s current passport.' },
-  { num: '02', title: 'Apply', desc: 'Complete your application online with supporting materials.' },
-  { num: '03', title: 'Schedule A Placement Test', desc: 'All students are required to sit for a placement test, this test will help us determine how best to meet the academic needs of each student.' },
- 
-  { num: '04', title: 'Decision', desc: 'Receive your admissions decision and join the Fountainhead Christian School' },
+  { num: '01', title: 'Inquire', desc: 'Submit an inquiry form online or call our admissions office.' },
+  { num: '02', title: 'Visit Campus', desc: 'Tour our campus, meet faculty, and experience FCS firsthand.' },
+  { num: '03', title: 'Apply Online', desc: 'Complete your application through our secure online portal.' },
+  { num: '04', title: 'Decision', desc: 'Receive your admissions decision and join the FCS community.' },
 ]
 
 export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
@@ -22,127 +21,83 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
   }, [isActive])
 
   return (
-    <div className="slide overflow-hidden">
-      {/* Split background */}
-      <div className="absolute inset-0 flex">
-        <div className="w-1/2 h-full" style={{ background: '#0a0e5c' }} />
-        <div className="w-1/2 h-full relative">
+    <div className="slide overflow-hidden" style={{ background: '#0a0e5c' }}>
+
+      {/* Background: right half is full-bleed image */}
+      <div className="absolute inset-0 grid grid-cols-2">
+        <div /> {/* left stays navy */}
+        <div className="relative">
           <img
-            src="https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1200&q=80"
-            alt="Campus"
-            className="w-full h-full object-cover"
+            src="images/fcs_about_img.jpg"
+            alt="Admission"
+            className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0" style={{ background: 'rgba(10,14,92,0.6)' }} />
+          {/* Fade from navy on the left edge so the text column blends */}
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(to right, rgba(10,14,92,0.75) 0%, rgba(10,14,92,0.05) 50%)' }}
+          />
         </div>
       </div>
 
-      {/* Diagonal divider */}
-      <div
-        className="absolute inset-y-0 left-1/2 w-32 z-10 hidden md:block"
-        style={{
-          background: 'linear-gradient(to right, #0a0e5c, transparent)',
-          transform: 'translateX(-50%) skewX(-3deg)',
-        }}
-      />
+      {/* Content — sits over the background */}
+      <div className="relative z-10 h-full flex items-center px-10 md:px-20 lg:px-28">
+        <div className="w-1/2 pr-10">
 
-      <div className="relative z-20 h-full flex flex-col justify-center px-10 md:px-20 lg:px-28 py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-          {/* Left: Process */}
-          <div>
-            <div className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <span className="white-rule" />
-              <span className="text-white text-[11px] tracking-[0.35em] uppercase font-body block mb-3">
-                Admission
-              </span>
-              <h2
-                className="font-display font-light text-white leading-tight mb-3"
-                style={{ fontSize: 'clamp(2.2rem, 4vw, 4.5rem)' }}
-              >
-                Begin Your
-              </h2>
-              <h2
-                className="font-display italic text-white leading-tight mb-8"
-                style={{ fontSize: 'clamp(2.2rem, 4vw, 4.5rem)' }}
-              >
-                Fountain Journey
-              </h2>
-            </div>
-
-            {/* Steps */}
-            <div className="space-y-6">
-              {steps.map((step, i) => (
-                <div
-                  key={step.num}
-                  className={`flex gap-5 items-start transition-all duration-700 ${
-                    loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
-                  }`}
-                  style={{ transitionDelay: `${200 + i * 100}ms` }}
-                >
-                  <span
-                    className="font-display text-4xl font-bold leading-none flex-none"
-                    style={{ color: 'rgba(201,168,76,0.25)', lineHeight: 1 }}
-                  >
-                    {step.num}
-                  </span>
-                  <div>
-                    <h3 className="font-display text-white text-lg mb-1">{step.title}</h3>
-                    <p className="text-white/50 font-body text-xs leading-relaxed">{step.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div
-              className={`flex gap-4 mt-10 transition-all duration-700 delay-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          <div className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+            <span className="block w-10 h-0.5 mb-5" style={{ background: '#c9a84c' }} />
+            <span style={{ color: '#c9a84c', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
+              Admission
+            </span>
+            <h2
+              className="font-display font-light text-white leading-tight mb-4"
+              style={{ fontSize: 'clamp(2rem, 4vw, 4.5rem)' }}
             >
-              <Link
-                href="/"
-                className="px-6 py-3 bg-white text-navy font-body font-semibold text-xs tracking-widest uppercase hover:bg-white-light transition-colors"
-              >
-                Inquire Today
-              </Link>
-              <Link
-                href="/"
-                className="px-6 py-3 border border-white/30 text-white font-body text-xs tracking-widest uppercase hover:border-white hover:text-white transition-all"
-              >
-                Plan a Visit
-              </Link>
-            </div>
+              Begin Your<br />
+              <em style={{ color: '#c9a84c' }}>FCS Journey</em>
+            </h2>
           </div>
 
-          {/* Right: Stats */}
-          <div
-            className={`transition-all duration-700 delay-300 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
-          >
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { num: '98%', label: 'School Acceptance Rate' },
-                { num: 'Experience', label: 'Tutors' },
-                { num: 'Affordable', label: 'Teaching Fees ' },
-                { num: '15:1', label: 'Student:Teacher Ratio' },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  className="p-6 border border-white/10 hover:border-white/30 transition-colors"
-                  style={{ background: 'rgba(255,255,255,0.04)' }}
+          <div className="space-y-5 mt-6">
+            {steps.map((step, i) => (
+              <div
+                key={step.num}
+                className={`flex gap-4 items-start transition-all duration-700 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}
+                style={{ transitionDelay: `${200 + i * 100}ms` }}
+              >
+                <span
+                  className="font-display font-bold flex-none"
+                  style={{ color: 'rgba(201,168,76,0.30)', fontSize: '2.5rem', lineHeight: 1 }}
                 >
-                  <div className="font-display text-3xl md:text-4xl text-white mb-2">{stat.num}</div>
-                  <div className="text-white/50 font-body text-[10px] tracking-widest uppercase">{stat.label}</div>
+                  {step.num}
+                </span>
+                <div>
+                  <h3 className="font-display text-white text-lg">{step.title}</h3>
+                  <p style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)', fontSize: '0.8rem', lineHeight: 1.6 }}>
+                    {step.desc}
+                  </p>
                 </div>
-              ))}
-            </div>
-
-            <div className="mt-6 p-6 border border-white/20" style={{ background: 'rgba(201,168,76,0.06)' }}>
-              <p className="font-display italic text-white/70 text-lg leading-relaxed">
-                "Fountainhed gave our daughter more than an education — it gave her a community
-                where she truly belongs."
-              </p>
-              <p className="text-white text-xs tracking-widest uppercase font-body mt-3">
-                — Fountain Parent, Class of 2025
-              </p>
-            </div>
+              </div>
+            ))}
           </div>
+
+          <div className={`flex gap-4 mt-8 transition-all duration-700 delay-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <Link
+              href="/admission"
+              className="px-6 py-3 font-body font-semibold text-xs tracking-widest uppercase"
+              style={{ background: '#c9a84c', color: '#10147c' }}
+            >
+              Inquire Today
+            </Link>
+            <Link
+              href="/plan-your-visit"
+              className="px-6 py-3 font-body text-xs tracking-widest uppercase"
+              style={{ border: '1px solid rgba(255,255,255,0.30)', color: 'white' }}
+            >
+              Plan a Visit
+            </Link>
+          </div>
+
         </div>
       </div>
     </div>

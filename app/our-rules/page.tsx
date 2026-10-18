@@ -307,22 +307,7 @@ are as follows:
           />
         </div>
 
-        {/* CTA Banner */}
-        <div
-          style={{
-            padding: "2.5rem",
-            display: "flex",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "1.5rem",
-            background: "rgba(201,168,76,0.10)",
-            border: "1px solid rgba(201,168,76,0.25)",
-          }}
-        >
-   
-      
-        </div>
+       
       </div>
       {/* end dark panel */}
     </PageLayout>

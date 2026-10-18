@@ -8,7 +8,7 @@ import AboutSlide from "@/components/slides/AboutSlide";
 import DivisionsSlide from "@/components/slides/DivisionsSlide";
 import AdmissionSlide from "@/components/slides/AdmissionSlide";
 import AboutUsComponent from "@/components/slides/AboutUsComponent";
-
+import FactsSlide     from '@/components/slides/FactsSlide'
 
 const SLIDES = [
   { label: "Home", Component: HeroSlide },
@@ -17,6 +17,7 @@ const SLIDES = [
   { label: "Our Values", Component: DivisionsSlide },
   { label: "Our Rules", Component: AboutSlide },
   { label: "Admission", Component: AdmissionSlide },
+  { label: 'Facts',     Component: FactsSlide },
 ];
 
 export default function HorizontalScroller() {

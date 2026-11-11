@@ -70,7 +70,7 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "Admission Policy",
+        title: "ADMISSION POLICY",
 
        image: 'images/banners/banner2.jpg',
         }}

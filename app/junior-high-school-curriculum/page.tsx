@@ -69,12 +69,12 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "Junior High School Curriculum",
+        title: "JUNIOR HIGH SCHOOL CURRICULUM",
 
         image:
           "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
       }}
-      breadcrumbs={[{ label: "Junior High School Curriculum" }]}
+      breadcrumbs={[{ label: "JUNIOR HIGH SCHOOL CURRICULUM" }]}
       sidebar={sidebar}
     >
       {/* ── Dark navy content panel ── */}

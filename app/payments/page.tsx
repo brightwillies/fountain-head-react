@@ -70,7 +70,7 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "Payments",
+        title: "PAYMENTS",
 
         image:
           "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",

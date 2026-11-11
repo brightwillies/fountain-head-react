@@ -69,7 +69,7 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "Lowwer & Upper School Curriculum",
+        title: "LOWER & UPPER SCHOOL CURRICULUM",
 
         image: 'images/banners/banner5.jpg',
      

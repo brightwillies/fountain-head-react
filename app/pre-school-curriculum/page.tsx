@@ -69,7 +69,7 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "Pre-School Curriculum",
+        title: "PRE-SCHOOL CURRICULUM",
 
       image: 'images/banners/banner4.jpg',
         }}

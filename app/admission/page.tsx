@@ -101,11 +101,11 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: 'Admission Overview',
+        title: 'ADMISSION OVERVIEW',
 
         image: 'images/banners/banner1.jpg',
       }}
-      breadcrumbs={[{ label: 'Admission Overview' }]}
+      breadcrumbs={[{ label: 'ADMISSION OVERVIEW' }]}
       sidebar={sidebar}
     >
       {/* ── Dark navy content panel ── */}

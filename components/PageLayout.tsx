@@ -81,7 +81,7 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
           )}
           <h1
             className={`font-display  font-light text-white leading-none transition-all duration-700 delay-100 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-            style={{ fontSize: '130px', fontWeight: 800, lineHeight: 1.05, letterSpacing: '0.08em',  textTransform: 'capitalize !important'  }}
+            style={{ fontSize: '150px', fontWeight: 900, lineHeight: 1.2,   textTransform: 'capitalize !important'  }}
           >
             {hero.title}
           </h1>

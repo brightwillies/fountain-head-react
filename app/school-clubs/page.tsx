@@ -63,7 +63,7 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "School Clubs",
+        title: "SCHOOL CLUBS",
         image:
           "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
       }}

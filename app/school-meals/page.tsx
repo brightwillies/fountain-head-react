@@ -84,11 +84,11 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "School Meals",
+        title: "SCHOOL MEALS",
         image:
           "https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=1600&q=80",
       }}
-      breadcrumbs={[{ label: "School Meals" }]}
+      breadcrumbs={[{ label: "SCHOOL MEALS" }]}
       sidebar={sidebar}
     >
       {/* ── Dark navy content panel ── */}

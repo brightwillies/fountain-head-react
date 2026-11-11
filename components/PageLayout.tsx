@@ -80,11 +80,13 @@ export default function PageLayout({ children, hero, breadcrumbs, sidebar }: Pag
             </span>
           )}
           <h1
-            className={`font-display font-light text-white leading-none transition-all duration-700 delay-100 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-            style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)' }}
+            className={`font-display  font-light text-white leading-none transition-all duration-700 delay-100 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+            style={{ fontSize: '150px', fontWeight: 800, lineHeight: 1.15, letterSpacing: '0.08em',  textTransform: 'capitalize !important'  }}
           >
             {hero.title}
           </h1>
+          
+
           {hero.subtitle && (
             <p
               className={`text-white/60 font-body font-light text-base mt-3 max-w-xl transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}

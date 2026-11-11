@@ -128,7 +128,7 @@ export default function AdmissionPage() {
   return (
     <PageLayout
       hero={{
-        title: "Our Rules",
+        title: "OUR RULES",
 
         image: "images/banners/banner3.jpg",
       }}

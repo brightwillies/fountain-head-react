@@ -45,8 +45,8 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
         <div className="w-1/2 pr-10">
 
           <div className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-            <span className="block w-10 h-0.5 mb-5" style={{ background: '#c9a84c' }} />
-            <span style={{ color: '#c9a84c', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
+            <span className="block w-10 h-0.5 mb-5" style={{ background: 'white' }} />
+            <span style={{ color: 'white', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
               Admission
             </span>
             <h2
@@ -54,7 +54,7 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
               style={{ fontSize: 'clamp(2rem, 4vw, 4.5rem)' }}
             >
               Begin Your<br />
-              <em style={{ color: '#c9a84c' }}>FCS Journey</em>
+              <em style={{ color: 'white' }}>FCS Journey</em>
             </h2>
           </div>
 
@@ -67,7 +67,7 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
               >
                 <span
                   className="font-display font-bold flex-none"
-                  style={{ color: 'rgba(201,168,76,0.30)', fontSize: '2.5rem', lineHeight: 1 }}
+                  style={{ color: 'rgba(255,255,255,0.30)', fontSize: '2.5rem', lineHeight: 1 }}
                 >
                   {step.num}
                 </span>
@@ -85,7 +85,7 @@ export default function AdmissionSlide({ isActive }: { isActive: boolean }) {
             <Link
               href="/admission"
               className="px-6 py-3 font-body font-semibold text-xs tracking-widest uppercase"
-              style={{ background: '#c9a84c', color: '#10147c' }}
+              style={{ background: 'white', color: '#10147c' }}
             >
               Inquire Today
             </Link>

@@ -51,7 +51,7 @@ export default function FactsSlide({ isActive }: { isActive: boolean }) {
 
         {/* Section header */}
         <div className={`mb-10 transition-all duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          <span className="block w-10 h-0.5 mb-4" style={{ background: '#c9a84c' }} />
+          <span className="block w-10 h-0.5 mb-4" style={{ background: 'white' }} />
           <h2
             className="font-display font-light text-white tracking-widest uppercase"
             style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.6rem)', letterSpacing: '0.3em' }}
@@ -71,7 +71,7 @@ export default function FactsSlide({ isActive }: { isActive: boolean }) {
               {/* Large stat number */}
               <span
                 className="font-display font-bold leading-none mb-1"
-                style={{ fontSize: 'clamp(3rem, 5.5vw, 6.5rem)', color: '#c9a84c' }}
+                style={{ fontSize: 'clamp(3rem, 5.5vw, 6.5rem)', color: 'white' }}
               >
                 {fact.stat}
               </span>
@@ -105,10 +105,10 @@ export default function FactsSlide({ isActive }: { isActive: boolean }) {
                   className="absolute inset-0"
                   style={{ background: 'linear-gradient(to top, rgba(10,14,92,0.65) 0%, rgba(10,14,92,0.05) 50%)' }}
                 />
-                {/* Gold corner: top-left */}
-                <div className="absolute top-0 left-0" style={{ width: 28, height: 28, borderTop: '2px solid rgba(201,168,76,0.7)', borderLeft: '2px solid rgba(201,168,76,0.7)' }} />
-                {/* Gold corner: bottom-right */}
-                <div className="absolute bottom-0 right-0" style={{ width: 28, height: 28, borderBottom: '2px solid rgba(201,168,76,0.7)', borderRight: '2px solid rgba(201,168,76,0.7)' }} />
+                {/* White corner: top-left */}
+                <div className="absolute top-0 left-0" style={{ width: 28, height: 28, borderTop: '2px solid rgba(255,255,255,0.7)', borderLeft: '2px solid rgba(255,255,255,0.7)' }} />
+                {/* White corner: bottom-right */}
+                <div className="absolute bottom-0 right-0" style={{ width: 28, height: 28, borderBottom: '2px solid rgba(255,255,255,0.7)', borderRight: '2px solid rgba(255,255,255,0.7)' }} />
               </div>
             </div>
           ))}

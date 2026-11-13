@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 export default function HeroSlide({ isActive }: { isActive: boolean }) {
@@ -14,118 +14,50 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
   }, [isActive])
 
   return (
-    <div className="slide bg-white">
-      {/* Video Background */}
-      <video
-        className="video-bg"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&q=80"
-      >
-        <source
-          src="video/hero.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div className="video-overlay" />
+    <div className="slide overflow-hidden" style={{ background: '#b3dff0' }}>
 
-      {/* Grain texture */}
-      <div
-        className="absolute inset-0 z-[2] opacity-[0.04] pointer-events-none"
+      {/* Full-bleed banner image */}
+      <img
+        src="images/fcs_banner.jpg"
+        alt="Fountainhead Christian School Silver Jubilee"
+        className="absolute inset-0 w-full h-full object-contain"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-          backgroundRepeat: 'repeat',
-          backgroundSize: '128px',
+          transform: loaded ? 'scale(1.02)' : 'scale(1.0)',
+          transition: 'transform 1.2s ease',
         }}
       />
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center px-10 md:px-20 lg:px-32">
-        {/* Eyebrow */}
-        <div
-          className={`mb-6 transition-all duration-700 delay-100 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-        >
-          <span className="text-white text-[11px] tracking-[0.35em] uppercase font-body font-medium">
-            Fountainhead Christian School
-          </span>
-        </div>
-
-        {/* Main headline */}
-       <h1
-  className={`text-white leading-none mb-2 transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-  style={{ fontFamily: '"neue-haas-unica"', fontSize: '150px', fontWeight: 300, letterSpacing: '-0.01em' }}
->
-  We
-</h1>
-<h1
-  className={`leading-none mb-10 transition-all duration-700 delay-300 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-  style={{ fontFamily: '"neue-haas-unica"', fontSize: '150px', fontWeight: 300, letterSpacing: '-0.01em', color: 'transparent', WebkitTextStroke: '1.5px #fcfbf8' }}
->
-  Believe.
-</h1>
-
-        {/* Tagline */}
-        <p
-          className={`text-white/70 font-body font-light text-base md:text-lg max-w-lg leading-relaxed mb-10 transition-all duration-700 delay-[400ms] ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-        >
-          An independent school where every student is known, challenged,
-          and inspired to discover their own path to excellence.
-        </p>
-
-        {/* CTA Buttons */}
-        <div
-          className={`flex flex-wrap gap-4 transition-all duration-700 delay-500 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-        >
-          <Link
-            href="/"
-            className="px-8 py-4 bg-white text-navy font-body font-semibold text-sm tracking-widest uppercase hover:bg-=white transition-colors duration-300"
-          >
-            Inquire Now
-          </Link>
-          <Link
-            href="/plan-your-visit"
-            className="px-8 py-4 border border-white/40 text-white font-body font-light text-sm tracking-widest uppercase hover:border-navy-dark hover:text-navy-dark transition-all duration-300"
-          >
-            Plan a Visit
-          </Link>
-          <Link
-            href="/admission"
-            className="px-8 py-4 border border-white/40 text-white font-body font-light text-sm tracking-widest uppercase hover:border-white hover:bg-white/10 transition-all duration-300"
-          >
-           Admissions
-          </Link>
-        </div>
-      </div>
-
-      {/* Scroll hint */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 hidden md:flex">
-        <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase font-body">Scroll to explore</span>
-        <div className="scroll-hint text-white">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </div>
-      </div>
-
-      {/* Bottom left stat strip */}
+      {/* Subtle vignette — edges only, keeps centre bright */}
       <div
-        className={`absolute bottom-10 left-10 md:left-20 z-10 transition-all duration-700 delay-[600ms] ${loaded ? 'opacity-100' : 'opacity-0'}`}
+        className="absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse at center, transparent 55%, rgba(10,14,92,0.35) 100%)',
+        }}
+      />
+
+      {/* Bottom CTA bar */}
+      <div
+        className={`absolute bottom-0 left-0 right-0 z-10 flex items-center justify-between px-10 md:px-20 py-6 transition-all duration-700 delay-500 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+        style={{ background: 'rgba(10,14,92,0.75)', backdropFilter: 'blur(12px)' }}
       >
-        <div className="flex gap-8">
-          {[
-            { num: '25+', label: 'Years of Excellence' },
-            { num: 'Creche–JHS', label: 'All Divisions' },
-            { num: '15:1', label: 'Student-Teacher Ratio' },
-          ].map((s) => (
-            <div key={s.label} className="hidden sm:bloc">
-              <div className="font-display text-2xl text-navy-dark font-semibold mt-1">{s.num}</div>
-              <div className="text-white/50 text-[10px] tracking-widest uppercase font-body">{s.label}</div>
-            </div>
-          ))}
+        <div>
+          <p className="font-body text-white/60 text-[10px] tracking-[0.3em] uppercase mb-1">
+            Fountainhead Christian School
+          </p>
+          <p className="font-body text-white font-semibold text-sm tracking-widest uppercase">
+            25th Anniversary — 14th November 2026 · 10am prompt
+          </p>
         </div>
+
+        <Link
+          href="/admission"
+          className="flex-shrink-0 px-8 py-3 font-body font-semibold text-xs tracking-widest uppercase transition-colors"
+          style={{ background: 'white', color: '#10147c' }}
+        >
+          Join Us
+        </Link>
       </div>
+
     </div>
   )
 }

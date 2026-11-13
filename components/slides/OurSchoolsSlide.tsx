@@ -63,9 +63,9 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
           <div
             className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
           >
-            <span className="block w-10 h-0.5 mb-5" style={{ background: '#c9a84c' }} />
+            <span className="block w-10 h-0.5 mb-5" style={{ background: 'white' }} />
             <span style={{
-              color: '#c9a84c',
+              color: 'white',
               fontSize: '11px',
               letterSpacing: '0.35em',
               textTransform: 'uppercase',
@@ -90,7 +90,7 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
           <Link
             href="/admission"
             className={`inline-flex items-center gap-3 px-6 py-3 font-body font-semibold text-xs tracking-widest uppercase transition-all duration-700 delay-300 w-fit ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-            style={{ background: '#c9a84c', color: '#10147c' }}
+            style={{ background: 'white', color: '#10147c' }}
           >
             Inquire Now
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -113,7 +113,7 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
                   // Expand hovered, slightly shrink others
                   flex: isHovered ? '2.5' : anyHovered ? '0.6' : '1',
                   transition: 'flex 0.6s cubic-bezier(0.77, 0, 0.175, 1)',
-                  borderLeft: '22px solid white',
+                  borderLeft: '30px solid white',
                 }}
                 onMouseEnter={() => setHovered(i)}
                 onMouseLeave={() => setHovered(null)}
@@ -148,7 +148,7 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
                     className="absolute top-8 left-6 font-display font-bold"
                     style={{
                       fontSize: '1rem',
-                      color: 'rgba(201,168,76,0.50)',
+                      color: 'rgba(255,255,255,0.50)',
                       letterSpacing: '0.2em',
                       fontFamily: 'var(--font-body)',
                     }}
@@ -161,8 +161,8 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
                     className="absolute top-5 left-5"
                     style={{
                       width: 20, height: 20,
-                      borderTop: '1.5px solid rgba(201,168,76,0.5)',
-                      borderLeft: '1.5px solid rgba(201,168,76,0.5)',
+                      borderTop: '1.5px solid rgba(255,255,255,0.5)',
+                      borderLeft: '1.5px solid rgba(255,255,255,0.5)',
                       opacity: isHovered ? 1 : 0,
                       transition: 'opacity 0.4s ease',
                     }}
@@ -170,43 +170,36 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
 
                   {/* Bottom label */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    {/* Vertical label — visible when not hovered */}
-                    <div
-                      style={{
-                        opacity: anyHovered && !isHovered ? 0 : 1,
-                        transition: 'opacity 0.3s ease',
-                      }}
-                    >
-                      <p
-                        className="font-body font-semibold uppercase mb-1"
-                        style={{
-                          fontSize: '0.65rem',
-                          letterSpacing: '0.2em',
-                          color: '#c9a84c',
-                        }}
-                      >
-                        {school.age}
-                      </p>
-                      <h3
-                        className="font-display text-white leading-tight"
-                        style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.3rem)' }}
-                      >
-                        {school.name}
-                      </h3>
-                    </div>
+                    {/* Default label — hidden when this card is hovered */}
+                    {!isHovered && (
+                      <div>
+                        <p
+                          className="font-body font-semibold uppercase mb-1"
+                          style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'white' }}
+                        >
+                          {school.age}
+                        </p>
+                        <h3
+                          className="font-display text-white leading-tight"
+                          style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.3rem)' }}
+                        >
+                          {school.name}
+                        </h3>
+                      </div>
+                    )}
 
                     {/* Expanded CTA — only on hover */}
+                    {isHovered && (
                     <div
                       style={{
                         opacity: isHovered ? 1 : 0,
                         transform: isHovered ? 'translateY(0)' : 'translateY(8px)',
                         transition: 'opacity 0.4s ease 0.15s, transform 0.4s ease 0.15s',
-                        position: isHovered ? 'relative' : 'absolute',
                       }}
                     >
                       <p
                         className="font-body font-semibold uppercase mb-2"
-                        style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: '#c9a84c' }}
+                        style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'white' }}
                       >
                         {school.age}
                       </p>
@@ -219,7 +212,7 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
                       <Link
                         href={school.href}
                         className="inline-flex items-center gap-2 font-body text-[10px] tracking-widest uppercase"
-                        style={{ color: '#c9a84c' }}
+                        style={{ color: 'white' }}
                       >
                         Learn More
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -227,6 +220,7 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
                         </svg>
                       </Link>
                     </div>
+                    )}
                   </div>
                 </div>
               </div>

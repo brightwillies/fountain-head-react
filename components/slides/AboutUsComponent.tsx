@@ -47,8 +47,8 @@ export default function AboutUsComponent({ isActive }: { isActive: boolean }) {
           <div
             className={`transition-all duration-700 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
           >
-            <span className="block w-10 h-0.5 mb-5" style={{ background: '#c9a84c' }} />
-            <span style={{ color: '#c9a84c', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
+            <span className="block w-10 h-0.5 mb-5" style={{ background: 'white' }} />
+            <span style={{ color: 'white', fontSize: '11px', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: 'var(--font-body)', display: 'block', marginBottom: '0.75rem' }}>
               Our Story
             </span>
             <h2
@@ -71,7 +71,7 @@ export default function AboutUsComponent({ isActive }: { isActive: boolean }) {
             <Link
               href={active.href}
               className="inline-flex items-center gap-3 px-8 py-4 font-body font-semibold text-xs tracking-widest uppercase transition-colors"
-              style={{ background: '#c9a84c', color: '#10147c' }}
+              style={{ background: 'white', color: '#10147c' }}
             >
               {active.cta}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -86,16 +86,16 @@ export default function WelcomeMessage({ isActive }: { isActive: boolean }) {
           <div
             className="absolute bottom-8 right-8 px-3 py-1.5 text-[9px] tracking-[0.3em] uppercase font-body z-10"
             style={{
-              background: "rgba(201,168,76,0.15)",
-              border: "1px solid rgba(201,168,76,0.35)",
+              background: "rgba(255,255,255,0.10)",
+              border: "1px solid rgba(255,255,255,0.30)",
               color: "#f6f4ee",
             }}
           >
             {tabs.find((t) => t.key === tab)?.label}
           </div>
-          {/* Gold corner accents on the image */}
-          <div className="absolute top-6 right-6 w-10 h-10 z-10" style={{ borderTop: '1px solid rgba(201,168,76,0.5)', borderRight: '1px solid rgba(201,168,76,0.5)' }} />
-          <div className="absolute bottom-6 left-6 w-10 h-10 z-10" style={{ borderBottom: '1px solid rgba(201,168,76,0.5)', borderLeft: '1px solid rgba(201,168,76,0.5)' }} />
+          {/* White corner accents on the image */}
+          <div className="absolute top-6 right-6 w-10 h-10 z-10" style={{ borderTop: '1px solid rgba(255,255,255,0.5)', borderRight: '1px solid rgba(255,255,255,0.5)' }} />
+          <div className="absolute bottom-6 left-6 w-10 h-10 z-10" style={{ borderBottom: '1px solid rgba(255,255,255,0.5)', borderLeft: '1px solid rgba(255,255,255,0.5)' }} />
         </div>
       </div>
 
@@ -130,7 +130,7 @@ export default function WelcomeMessage({ isActive }: { isActive: boolean }) {
               loaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
             }`}
           >
-            <span className="block w-10 h-0.5 mb-5" style={{ background: '#c9a84c' }} />
+            <span className="block w-10 h-0.5 mb-5" style={{ background: 'white' }} />
             <h2
               className="font-display font-semibold text-white leading-tight mb-8"
               style={{ fontSize: "clamp(1.6rem, 3.5vw, 3.8rem)" }}
@@ -146,7 +146,7 @@ export default function WelcomeMessage({ isActive }: { isActive: boolean }) {
               maxHeight: "38vh",
               overflowY: "auto",
               scrollbarWidth: "thin",
-              scrollbarColor: "rgba(201,168,76,0.3) transparent",
+              scrollbarColor: "rgba(255,255,255,0.3) transparent",
             }}
           >
             {active.paragraphs.map((para, i) => (
@@ -165,7 +165,7 @@ export default function WelcomeMessage({ isActive }: { isActive: boolean }) {
           <Link
             href={active.href}
             className="inline-flex items-center gap-3 px-8 py-4 font-body font-semibold text-xs tracking-widest uppercase transition-colors"
-            style={{ background: '#c9a84c', color: '#10147c' }}
+            style={{ background: 'white', color: '#10147c' }}
           >
             {active.cta}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

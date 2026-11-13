@@ -113,7 +113,7 @@ export default function OurSchoolsSlide({ isActive }: { isActive: boolean }) {
                   // Expand hovered, slightly shrink others
                   flex: isHovered ? '2.5' : anyHovered ? '0.6' : '1',
                   transition: 'flex 0.6s cubic-bezier(0.77, 0, 0.175, 1)',
-                  borderLeft: '30px solid white',
+                  borderLeft: '22px solid white',
                 }}
                 onMouseEnter={() => setHovered(i)}
                 onMouseLeave={() => setHovered(null)}

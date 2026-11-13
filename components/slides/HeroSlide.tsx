@@ -53,23 +53,18 @@ export default function HeroSlide({ isActive }: { isActive: boolean }) {
         </div>
 
         {/* Main headline */}
-        <h1
-          className={`font-display font-light text-white leading-none mb-2 transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-          style={{ fontSize: 'clamp(3.5rem, 9vw, 9rem)' }}
-        >
-          We
-        </h1>
-        <h1
-          className={`font-display font-semibold leading-none mb-10 transition-all duration-700 delay-300 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-          style={{
-            fontSize: 'clamp(3.5rem, 9vw, 9rem)',
-            color: 'transparent',
-            WebkitTextStroke: '1.5px #fcfbf8',
-            // WebkitTextStroke: '1.5px #f6f4ee',
-          }}
-        >
-          Believe.
-        </h1>
+       <h1
+  className={`text-white leading-none mb-2 transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+  style={{ fontFamily: '"neue-haas-unica"', fontSize: '150px', fontWeight: 300, letterSpacing: '-0.01em' }}
+>
+  We
+</h1>
+<h1
+  className={`leading-none mb-10 transition-all duration-700 delay-300 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+  style={{ fontFamily: '"neue-haas-unica"', fontSize: '150px', fontWeight: 300, letterSpacing: '-0.01em', color: 'transparent', WebkitTextStroke: '1.5px #fcfbf8' }}
+>
+  Believe.
+</h1>
 
         {/* Tagline */}
         <p

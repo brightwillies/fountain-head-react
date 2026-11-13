@@ -50,12 +50,14 @@ body {
   }
 }
 
-/* Add this ABOVE the .page-root block — targets slide headlines */
-.slide h2 {
-  font-family: "neue-haas-unica", sans-serif;
+/* ── Neue Haas Unica headline class ── */
+/* Apply className="headline-neue" to any h1/h2 that should use this font */
+.headline-neue {
+  font-family: "neue-haas-unica";
   font-weight: 300;
+  font-size: 150px;
+  line-height: 1;
   letter-spacing: -0.01em;
-  font-size: 1500px;
 }
 
 /* ── Inner pages: vertical scroll ── */

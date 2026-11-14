@@ -1,0 +1,22 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/academics/page": "app/academics/page.js",
+  "/admission-policy/page": "app/admission-policy/page.js",
+  "/admission/page": "app/admission/page.js",
+  "/arts/page": "app/arts/page.js",
+  "/creche-curriculum/page": "app/creche-curriculum/page.js",
+  "/junior-high-school-curriculum/page": "app/junior-high-school-curriculum/page.js",
+  "/lower-upper-school-curriculum/page": "app/lower-upper-school-curriculum/page.js",
+  "/our-rules/page": "app/our-rules/page.js",
+  "/page": "app/page.js",
+  "/payments/page": "app/payments/page.js",
+  "/pre-school-curriculum/page": "app/pre-school-curriculum/page.js",
+  "/school-activities/page": "app/school-activities/page.js",
+  "/school-clubs/page": "app/school-clubs/page.js",
+  "/school-meals/page": "app/school-meals/page.js",
+  "/sports-activities/page": "app/sports-activities/page.js",
+  "/support-walker/page": "app/support-walker/page.js",
+  "/upper-school/page": "app/upper-school/page.js"
+}

@@ -1,0 +1,165 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about-us",
+      "regex": "^/about\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us(?:/)?$"
+    },
+    {
+      "page": "/academics",
+      "regex": "^/academics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/academics(?:/)?$"
+    },
+    {
+      "page": "/admission",
+      "regex": "^/admission(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admission(?:/)?$"
+    },
+    {
+      "page": "/admission-policy",
+      "regex": "^/admission\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admission\\-policy(?:/)?$"
+    },
+    {
+      "page": "/arts",
+      "regex": "^/arts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arts(?:/)?$"
+    },
+    {
+      "page": "/creche-curriculum",
+      "regex": "^/creche\\-curriculum(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/creche\\-curriculum(?:/)?$"
+    },
+    {
+      "page": "/junior-high-school-curriculum",
+      "regex": "^/junior\\-high\\-school\\-curriculum(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/junior\\-high\\-school\\-curriculum(?:/)?$"
+    },
+    {
+      "page": "/lower-upper-school-curriculum",
+      "regex": "^/lower\\-upper\\-school\\-curriculum(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lower\\-upper\\-school\\-curriculum(?:/)?$"
+    },
+    {
+      "page": "/our-rules",
+      "regex": "^/our\\-rules(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/our\\-rules(?:/)?$"
+    },
+    {
+      "page": "/payments",
+      "regex": "^/payments(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payments(?:/)?$"
+    },
+    {
+      "page": "/pre-school-curriculum",
+      "regex": "^/pre\\-school\\-curriculum(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pre\\-school\\-curriculum(?:/)?$"
+    },
+    {
+      "page": "/school-activities",
+      "regex": "^/school\\-activities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/school\\-activities(?:/)?$"
+    },
+    {
+      "page": "/school-clubs",
+      "regex": "^/school\\-clubs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/school\\-clubs(?:/)?$"
+    },
+    {
+      "page": "/school-meals",
+      "regex": "^/school\\-meals(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/school\\-meals(?:/)?$"
+    },
+    {
+      "page": "/sports-activities",
+      "regex": "^/sports\\-activities(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sports\\-activities(?:/)?$"
+    },
+    {
+      "page": "/support-walker",
+      "regex": "^/support\\-walker(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/support\\-walker(?:/)?$"
+    },
+    {
+      "page": "/upper-school",
+      "regex": "^/upper\\-school(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/upper\\-school(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

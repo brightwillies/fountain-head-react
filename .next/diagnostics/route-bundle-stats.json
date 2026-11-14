@@ -1,0 +1,267 @@
+[
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 559787,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0rp5lyw1z851-.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/about-us",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/academics",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/admission",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/admission-policy",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/arts",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/creche-curriculum",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/junior-high-school-curriculum",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/lower-upper-school-curriculum",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/our-rules",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/payments",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/pre-school-curriculum",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/school-activities",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/school-clubs",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/school-meals",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/sports-activities",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/support-walker",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/upper-school",
+    "firstLoadUncompressedJsBytes": 529323,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/0qjtbj9e08pd6.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  },
+  {
+    "route": "/_not-found",
+    "firstLoadUncompressedJsBytes": 513849,
+    "firstLoadChunkPaths": [
+      ".next/static/chunks/01xlw8hd842-c.js",
+      ".next/static/chunks/0d3shmwh5_nmn.js",
+      ".next/static/chunks/15xrurgzs99gv.js",
+      ".next/static/chunks/0dgq26a5_oy.a.js",
+      ".next/static/chunks/0wdletr~8_3-5.js",
+      ".next/static/chunks/0rf542tkyur~y.js",
+      ".next/static/chunks/turbopack-0f70zj1tady7m.js"
+    ]
+  }
+]

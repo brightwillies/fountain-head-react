@@ -1,0 +1,22 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about-us/page": "/about-us",
+  "/academics/page": "/academics",
+  "/admission-policy/page": "/admission-policy",
+  "/admission/page": "/admission",
+  "/arts/page": "/arts",
+  "/creche-curriculum/page": "/creche-curriculum",
+  "/junior-high-school-curriculum/page": "/junior-high-school-curriculum",
+  "/lower-upper-school-curriculum/page": "/lower-upper-school-curriculum",
+  "/our-rules/page": "/our-rules",
+  "/page": "/",
+  "/payments/page": "/payments",
+  "/pre-school-curriculum/page": "/pre-school-curriculum",
+  "/school-activities/page": "/school-activities",
+  "/school-clubs/page": "/school-clubs",
+  "/school-meals/page": "/school-meals",
+  "/sports-activities/page": "/sports-activities",
+  "/support-walker/page": "/support-walker",
+  "/upper-school/page": "/upper-school"
+}

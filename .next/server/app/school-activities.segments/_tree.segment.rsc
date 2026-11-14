@@ -4,4 +4,4 @@
 :HL["images/cadet_club.jpg","image"]
 :HL["images/literacy_club.jpg","image"]
 :HL["images/bible_club.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"school-activities","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"UZMf92ByFJ5PRxIYYsLiN"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"school-activities","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"zAg-W8LNIli2NSyK3W2GG"}

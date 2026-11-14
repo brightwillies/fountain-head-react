@@ -1,6 +1,6 @@
 {
-  "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
   "/about-us/page": "app/about-us/page.js",
   "/academics/page": "app/academics/page.js",
   "/admission-policy/page": "app/admission-policy/page.js",
